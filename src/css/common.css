@@ -1,6 +1,4 @@
-
 :root {
-  /* font-family: Popins, Montserrat, Impact, sans-serif; */
   --font-family: "Poppins", sans-serif;
   --second-family: "Impact", sans-serif;
   --third-family: "Montserrat", sans-serif;
@@ -68,6 +66,24 @@ img {
 
 body {
   font-family:"Poppins", sans-serif; 
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width:360px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 
