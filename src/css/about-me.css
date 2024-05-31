@@ -84,34 +84,54 @@
 .about-me {
     padding-top: 124px;
 }
+.about-container{
+    position: relative;
+    background-image: url(../img/about-img/decor-bg-about.png);
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 90%;
+}
+.about-container-wrap{
+    height: 1264px;
+}
 .about-title {
-    font-family: var(--second-family);
-    font-weight: 400;
     font-size: 108px;
     line-height: 115%;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
-    text-align: left;
-    color: var(--black);
     }
-    .about-img {
+.about-img {
+    position: absolute;
+    top:532px;
     width: 336px;
     height: 392px;
 }
 .about-wrapper-bio {
+    position: absolute;
+    right: 32px;
+    top: 164px;
     width: 336px;
+    margin: 0;
 }
 .about-wrapper-all{
+    position: relative;
     display: flex;
     padding-top: 60px;
     width: 704px;
+    height: 280px;
 }
 .about-wrapper-education {
+    position: absolute;
+    top: 820px;
     width: 336px;
+    height: 200px;
     margin-right: 32px;
 }
 .about-wrapper-role {
+    position: absolute;
+    top: 820px;
+    right: 0;
     width: 336px;
+    height: 184px;
 }
 }
 
