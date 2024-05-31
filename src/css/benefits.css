@@ -1,0 +1,44 @@
+.work-with {
+  margin-top: 80px;
+}
+
+.icon {
+}
+
+.work-with-span {
+  color: #00b068;
+}
+
+.work-with-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.work-list-title {
+  margin-bottom: 16px;
+}
+
+.work-list {
+  margin-top: 40px;
+}
+
+.work-list-item {
+  margin-top: 32px;
+}
+
+.icon-wrap {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 174, 104, 10%);
+  border-radius: 8px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
