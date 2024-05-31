@@ -4,27 +4,27 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 342px;
-    background-image: url(/images/together/footer-mobile.png);
+    background-image: url(/img/together/footer-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top 0 right -30px;
-    background-image: -webkit-image-set('/images/together/footer-mobile.webp');
-    background-image: image-set('/images/together/footer-mobile.webp');
+    background-image: -webkit-image-set('/img/together/footer-mobile.webp');
+    background-image: image-set('/img/together/footer-mobile.webp');
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (-webkit-min-device-pixel-ratio: 2) {
     .footer {
-      background-image: url(/images/together/footer-mobile@2x.png);
+      background-image: url(/img/together/footer-mobile@2x.png);
     }
     @media screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx),
       screen and (-webkit-min-device-pixel-ratio: 2) {
       .footer {
         background-image: -webkit-image-set(
-          '/images/together/footer-mobile@2x.webp'
+          '/img/together/footer-mobile@2x.webp'
         );
-        background-image: image-set('/images/together/footer-mobile@2x.webp');
+        background-image: image-set('/img/together/footer-mobile@2x.webp');
       }
     }
   }
@@ -180,16 +180,16 @@
     .footer {
       padding-top: 48px;
       max-width: 768px;
-      background-image: url(/images/together/footer-tablet.png);
+      background-image: url(/img/together/footer-tablet.png);
       background-position: top right -10px;
-      background-image: -webkit-image-set('/images/together/footer-tablet.webp');
-      background-image: image-set('/images/together/footer-tablet.webp');
+      background-image: -webkit-image-set('/img/together/footer-tablet.webp');
+      background-image: image-set('/img/together/footer-tablet.webp');
     }
     @media screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx),
       screen and (-webkit-min-device-pixel-ratio: 2) {
       .footer {
-        background-image: url(/images/together/footer-tablet@2x.png);
+        background-image: url(/img/together/footer-tablet@2x.png);
       }
     }
     @media screen and (min-resolution: 192dpi),
@@ -197,9 +197,9 @@
       screen and (-webkit-min-device-pixel-ratio: 2) {
       .footer {
         background-image: -webkit-image-set(
-          '/images/together/footer-tablet@2x.webp'
+          '/img/together/footer-tablet@2x.webp'
         );
-        background-image: image-set('/images/together/footer-tablet@2x.webp');
+        background-image: image-set('/img/together/footer-tablet@2x.webp');
       }
     }
     .footer-container {
@@ -255,7 +255,7 @@
     .footer {
       padding-top: 82px;
       max-width: 1440px;
-      background-image: url(/images/together/footer-desktop.png);
+      background-image: url(/img/together/footer-desktop.png);
       background-position: top 0 right -60px;
      
     }
@@ -264,7 +264,7 @@
       screen and (min-resolution: 2dppx),
       screen and (-webkit-min-device-pixel-ratio: 2) {
       .footer {
-        background-image: url(/images/together/footer-desktop@2x.png);
+        background-image: url(/img/together/footer-desktop@2x.png);
       }
     }
     @media screen and (min-resolution: 192dpi),
@@ -272,9 +272,9 @@
       screen and (-webkit-min-device-pixel-ratio: 2) {
       .footer {
         background-image: -webkit-image-set(
-          '/images/together/footer-desktop@2x.webp'
+          '/img/together/footer-desktop@2x.webp'
         );
-        background-image: image-set('/images/together/footer-desktop@2x.webp');
+        background-image: image-set('/img/together/footer-desktop@2x.webp');
       }
     }
     .footer-container {
