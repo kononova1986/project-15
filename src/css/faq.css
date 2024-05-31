@@ -19,7 +19,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 text-align: left;
 color: var(--black);
-margin-bottom: 60px;
+margin-bottom: 40px;
 }
 
 .faq-title-span {
@@ -94,8 +94,14 @@ text-transform:none;
 @media screen and (min-width: 768px) {
     .faq-title{
         font-size: 108px;
+margin-bottom: 60px;
+        max-width: 592px;
     }
 
+    
+.faq-container{
+padding-top: 124px;
+}
     
 .accordion-item-title{
     width: 540px;
