@@ -62,7 +62,6 @@
 }
 .about-wrapper-role{
     width: 320px;
-    height: 168px;
 }
 .item-role{
     position: relative;
@@ -105,9 +104,11 @@
 .about-wrapper-all{
     display: flex;
     padding-top: 60px;
+    width: 704px;
 }
 .about-wrapper-education {
     width: 336px;
+    margin-right: 32px;
 }
 .about-wrapper-role {
     width: 336px;
