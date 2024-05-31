@@ -84,6 +84,10 @@ height:18px;
 
 }
 .load-more {
+        display: flex; /* Використання flexbox */
+        flex-direction: column; /* Розташування елементів вертикально */
+        align-items: center; /* Вирівнювання по центру */
+        justify-content: center;
     background-color: white;
     padding: 12px 24px;
     min-width: 154px;
@@ -100,6 +104,8 @@ height:18px;
 .load-more:hover,
 .load-more:focus{
     color: var(--accet-green);
+}
+.project{
 }
 .icon-line{
     width:107px;
