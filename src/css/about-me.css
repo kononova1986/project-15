@@ -1,4 +1,4 @@
-.about-container {
+.about-me {
     padding-top: 80px;
 }
 .about-title {
@@ -82,7 +82,7 @@
 }
 
 @media screen and (min-width: 768px) {
-.about-container {
+.about-me {
     padding-top: 124px;
 }
 .about-title {
@@ -101,8 +101,6 @@
 }
 .about-wrapper-bio {
     width: 336px;
-    top: 164px;
-    left: 368px;
 }
 .about-wrapper-all{
     display: flex;
@@ -110,8 +108,6 @@
 }
 .about-wrapper-education {
     width: 336px;
-    margin-bottom: 0;
-    margin-right: 32px;
 }
 .about-wrapper-role {
     width: 336px;

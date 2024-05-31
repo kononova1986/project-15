@@ -42,7 +42,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16 16c3.314 0 6-2.686 6-6s-2.686-6-6-6c-3.314 0-6 2.686-6 6s2.686 6 6 6z"></path>
 </symbol>
 <symbol id="icon-line" viewBox="0 0 1712 32">
-<path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16v-32zM16 32l1696 0v-32l-1696-0v32z"></path>
+<path fill="#00b068" style="fill: var(--color1, #00b068)" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16v-32zM16 32l1696 0v-32l-1696-0v32z"></path>
 </symbol>
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M3.111 28.889l25.778-25.778M28.889 3.111h-24M28.889 3.111v24"></path>
