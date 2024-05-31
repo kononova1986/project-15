@@ -1,0 +1,111 @@
+
+.projects-title {
+    margin-top: 80px;
+    text-align: center;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding-bottom: 40px;
+}
+.ighlight {
+    color: var(--accet-green);
+}
+.project-list {
+}
+.project-item {
+    height: 380px;
+    
+}
+.project-image {
+    border-radius: 16px;
+}
+.project-content {
+    padding-top: 15px;
+}
+.project-tech {
+    font-family: var(--font-family);
+font-weight: 300;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+}
+.project-name-btn{
+    padding-top: 16px;
+
+}
+.project-name {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 32px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: var(--black);
+padding-bottom: 16px;
+}
+.break {
+    display: block; /* Робить елемент блочним */
+}
+.project-button {
+    text-align: center; 
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    border-radius: 8px;
+    padding: 12px 24px;
+    min-width: 125px;
+    height: 48px;
+    border: none;
+    background: var(--light-grey);
+}
+.project-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+.project-icon {
+    margin-left: 12px;
+    stroke-width: 2px;
+stroke: var(--accet-green);
+width:18px;
+height:18px;
+
+}
+.load-more {
+    background-color: white;
+    padding: 12px 24px;
+    min-width: 154px;
+    height: 52px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    border: none;
+}
+.project{
+    display: block;
+    stroke-width: 2px;
+    width:107px;
+    height:2px;
+    stroke: var(--accet-green);
+}
+.centered {
+    text-align: end;
+}
+.centered-button{
+    margin-top: 40px;
+    text-align: center;
+
+    
+}
