@@ -1,11 +1,11 @@
 
 .projects-title {
-    margin-top: 80px;
+    padding-top: 80px;
     text-align: center;
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 52px;
-    line-height: 123%;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--black);
@@ -17,8 +17,7 @@
 .project-list {
 }
 .project-item {
-    height: 380px;
-    
+    margin-bottom: 40px;
 }
 .project-image {
     border-radius: 16px;
@@ -26,16 +25,17 @@
 .project-content {
     padding-top: 15px;
 }
+.project-name-btn{
+    padding-top: 16px;
+
+}
 .project-tech {
     font-family: var(--font-family);
 font-weight: 300;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.03em;
-}
-.project-name-btn{
-    padding-top: 16px;
-
+color: var(--black);
 }
 .project-name {
     font-family: var(--font-family);
@@ -55,7 +55,7 @@ padding-bottom: 16px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--black);
     border-radius: 8px;
@@ -104,12 +104,46 @@ height:18px;
     text-align: end;
 }
 .centered-button{
-    margin-top: 40px;
     text-align: center; 
 }
 
 @media screen and (min-width: 768px){
-
+    .projects-title {
+        padding-top: 80px;
+        text-align: center;
+        font-size: 108px;
+        letter-spacing: 0.02em;
+        padding-bottom: 60px;
+    }
+    .project-image {
+        border-radius: 24px;
+    }
+    .project-item {
+        margin-bottom: 60px;
+    }
+    .project-name {
+        display: flex;
+        gap: 15px;
+    font-size: 36px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    padding-bottom: 0;
+    }
+    .project-name-btn{
+        padding-top: 20px;
+       display: flex;
+       justify-content: space-between;
+    }
+    .load-more {
+        min-width: 165px;
+        height: 56px;
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+    }
+    .project{
+        width:119px;
+    }
 }
 
 
