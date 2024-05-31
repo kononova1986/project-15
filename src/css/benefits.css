@@ -6,17 +6,17 @@
 }
 
 .work-with-span {
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .work-with-title {
-  font-family: 'Impact', sans-serif;
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--black);
 }
 
 .work-list-title {
@@ -41,4 +41,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .work-with {
+    margin-top: 124px;
+  }
+  .work-with-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
 }
