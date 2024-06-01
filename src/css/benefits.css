@@ -21,6 +21,14 @@
 
 .work-list-title {
   margin-bottom: 16px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .work-list {
@@ -29,6 +37,15 @@
 
 .work-list-item {
   margin-top: 32px;
+}
+
+.work-list-paragraph {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
 }
 
 .icon-wrap {
@@ -51,6 +68,30 @@
     font-size: 108px;
     line-height: 1.14815;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
+  }
+
+  .work-list {
+    display: block;
+    border-radius: 16px;
+    width: 336px;
+    height: 208px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .work-item {
+    margin-top: 0;
+  }
+
+  .work-list-first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .work-list-item {
+    border-radius: 16px;
+    width: 336px;
+    height: 184px;
   }
 }
