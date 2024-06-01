@@ -90,7 +90,7 @@
 }
 
 /* Адаптація під телефон */
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 768px){
     .reviews-header {
         font-size: 36px;
         margin-bottom: 16px;
