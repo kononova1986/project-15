@@ -1,88 +1,96 @@
-/* Основні стилі */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
     background-color: #121212;
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 header, footer {
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
 }
 
 #reviews-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Слайдер стилі */
 .swiper {
     width: 100%;
-    padding: 20px 0;
+    padding: 2rem 0;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .swiper-slide {
-    background-color: #1f1f1f;
-    padding: 20px;
+    background-color: #1e1e1e;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 2rem;
+    text-align: left;
+    margin: 0 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.review-author {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
+.swiper-slide h3 {
+    margin: 0 0 1rem 0;
 }
 
-.review-author img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+.swiper-slide p {
+    margin: 0;
 }
 
-.review-author span {
-    font-size: 1em;
-    font-weight: bold;
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.swiper-button-disabled {
-    opacity: 0.35;
+.swiper-button-prev svg,
+.swiper-button-next svg {
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+    opacity: 0.5;
     cursor: not-allowed;
 }
 
-/* Адаптивність */
 @media (max-width: 767px) {
-    #reviews-container {
-        width: 100%;
-        padding: 0 10px;
+    .swiper-slide {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-    #reviews-container {
-        width: 80%;
-    }
-}
-
-@media (min-width: 1280px) {
-    #reviews-container {
-        width: 70%;
+    .swiper-slide {
+        flex-direction: column;
+        padding: 1rem;
     }
 }
