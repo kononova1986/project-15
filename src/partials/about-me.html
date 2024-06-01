@@ -2,11 +2,17 @@
     <div class="container about-container">
         <div class="about-container-wrap">
         <h1 class="about-title">About <span class="about-title-green">me</span></h1>
-        <img
-        class="about-img"
-        src="./img/about-img/mobile-img.jpg"
-        alt="beautiful yacht"
-        />
+      
+<picture>
+    <source srcset="./img/about-img/ava-mobile.jpg 1x, 
+    ./img/about-img/ava-mobile@2.jpg 2x" type="image/jpeg" media="(max-width: 767px)">
+    <source srcset="./img/about-img/ava-tab.jpg 1x, 
+    ./img/about-img/ava-tab@2.jpg 2x" type="image/jpeg" media="(min-width: 768px) and (max-width: 1279px)">
+    <source srcset="./img/about-img/ava-desktop.jpg 1x, 
+    ./img/about-img/ava-desktop@2.jpg 2x" type="image/jpeg" media="(min-width: 1280px)">
+    <img class="about-img" src="./img/about-img/ava-mobile.jpg" alt="photo by the author">
+</picture>
+
         <div class="about-wrapper-bio">
         <h3 class="about-subtitle">BIO</h3>
         <ul class="about-list">
