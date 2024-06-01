@@ -1,76 +1,70 @@
-#reviews-container {
-    max-width: 1280px;
-    margin: 0 auto;
+.reviews-header {
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: black;
     text-align: center;
-}
-
-.swiper {
-    width: 100%;
-    padding: 2rem 0;
-}
-
-.swiper-wrapper {
+    margin-bottom: 40px;
+    }
+    
+    .reviews-swiper {
+        background-color: lightgray;
+        border-radius: 16px;
+    padding: 32px;
+    
+    margin-bottom: 24px;
+    display: flex;
+    
+    }
+    
+    .buttons {
+        display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    }
+    
+    .svg-prev {
+        border: 1px solid rgba(41, 41, 41, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-180deg);
+    }
+    
+    
+    .svg-next {
+     border: 1px solid rgba(41, 41, 41, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    
+    }
+    
+    .reviews-img {
+        width: 40px;
+        height: 40px;
+         border-radius: 50%;
+    }
+    
+    .review-text{
+       margin-bottom: 24px;
+       font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    }
+    
+    .swiper-img-container{
     display: flex;
     align-items: center;
-}
-
-.swiper-slide {
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: left;
-    margin: 0 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.swiper-slide h3 {
-    margin: 0 0 1rem 0;
-}
-
-
-.swiper-slide p {
-    margin: 0;
-}
-
-.icon {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-button-prev svg,
-.swiper-button-next svg {
-    width: 24px;
-    height: 24px;
-}
-
-.swiper-button-prev:disabled,
-.swiper-button-next:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-@media (max-width: 767px) {
-    .swiper-slide {
-        flex-direction: column;
-        padding: 1rem;
+    gap: 16px;
+    margin-bottom: 32px;
     }
-
-    .swiper-button-prev, .swiper-button-next {
-        display: none;
+    
+    .reviews-swiper-container {
+        display: flex;
+        gap: 32px;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-    .swiper-slide {
-        flex-direction: column;
-        padding: 1rem;
-    }
-}
