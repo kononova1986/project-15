@@ -118,6 +118,10 @@ h1 {
         letter-spacing: 0.5px;
 }
 
+.media-link:hover {
+    color:#00B068;
+}
+
 .social-links-list {
     padding: 0;
     display: flex;
