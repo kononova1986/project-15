@@ -70,15 +70,16 @@ text-transform:none;
 .icon-faq{
     margin-left: 16px;
     max-width:16px;
+     stroke:var(--black);
 }
 
 .icon-faq-up{
     margin-left: 16px;
+     stroke:var(--black);
 }
 
 .icon-usage{ 
     fill: none;
-     stroke:var(--black);
 }
 
 .active{
@@ -96,6 +97,8 @@ text-transform:none;
         font-size: 108px;
 margin-bottom: 60px;
         max-width: 592px;
+        line-height: 115%;
+letter-spacing: 0.02em;
     }
 
     
@@ -115,4 +118,39 @@ max-width: 704px;
 .icon-faq-up{
     margin-left: 24px;
 }
+}
+
+@media screen and (min-width:1280px){
+    .faq-container{
+width: 1280px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: relative;
+    background-image: url(../img/faq-image/faq-decor.png);
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 103%;
+}
+
+.faq-title{
+        margin: 0;
+    }
+
+.accordion-item{
+max-width: 592px;
+}
+
+.accordion-item-title{
+    max-width: 460px;
+}
+
+.accordion{
+padding-top: 276px;
+}
+
+.accordion-text{
+    margin-right: 0;
+}
+
 }
