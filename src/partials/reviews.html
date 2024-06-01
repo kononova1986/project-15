@@ -1,22 +1,25 @@
-    <section id="reviews-container">
-            <h2>Reviews</h2>
-            <div class="swiper">
-                <div class="swiper-wrapper" id="reviews-wrapper">
-                    <!-- Slides will be inserted here dynamically -->
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev">
-                    <svg class="icon">
-                        <use xlink:href="sprite.svg#icon-arrow-reviews-left"></use>
-                    </svg>
-                </div>
-                <div class="swiper-button-next">
-                    <svg class="icon">
-                        <use xlink:href="sprite.svg#icon-arrow-reviews-right"></use>
-                    </svg>
-                </div>
-                <div class="swiper-scrollbar"></div>
-            </div>
-            
-        </section>
-    
+<section class="reviews">
+    <div class="container">
+      <h2 class="reviews-header">Reviews</h2>
+     <div class="swiper-container">
+      <ul class="reviews-swiper">
+        
+      </ul>
+      <div class="buttons">
+        <div class="button-prev">
+          <svg class="svg-prev" width="32" height="32">
+            <use href=""></use>
+          </svg>
+        </div>
+        <div class="button-next">
+          <svg class="svg-next" width="32" height="32">
+            <use href=""></use>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+   
+  </section>
+
+   <script src="../js/reviews.js" defer type="module"></script>
