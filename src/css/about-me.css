@@ -17,11 +17,8 @@
 }
 .about-img {
     border-radius: 16px;
-    width: 320px;
-    height: 374px;
 }
 .about-wrapper-bio {
-    width: 320px;
     margin: 40px 0;
 }
 .about-subtitle {
@@ -48,7 +45,6 @@
     color: var(--black);
 }
 .about-wrapper-education {
-    width: 320px;
     margin-bottom: 40px;
 }
 .about-list {
@@ -59,9 +55,6 @@
 .item-education {
     position: relative;
     padding-left: 32px;
-}
-.about-wrapper-role{
-    width: 320px;
 }
 .item-role{
     position: relative;
@@ -92,6 +85,7 @@
     background-position-y: 90%;
 }
 .about-container-wrap{
+    width: 704px;
     height: 1264px;
 }
 .about-title {
@@ -116,19 +110,19 @@
     position: relative;
     display: flex;
     padding-top: 60px;
-    width: 704px;
-    height: 280px;
+    /* width: 704px;
+    height: 280px; */
 }
 .about-wrapper-education {
     position: absolute;
-    top: 820px;
+    top: 840px;
     width: 336px;
-    height: 200px;
     margin-right: 32px;
+    margin-bottom: 0px;
 }
 .about-wrapper-role {
     position: absolute;
-    top: 820px;
+    top: 840px;
     right: 0;
     width: 336px;
     height: 184px;
@@ -136,5 +130,46 @@
 }
 
 @media screen and (min-width: 1280px) {
-
+.about-me {
+    padding-top: 124px;
+}
+.about-container{
+    position: relative;
+    background-position-x: 93%;
+    background-position-y: 90%;
+}
+.about-container-wrap{
+    width: 1216px;
+    height: 1244px;
+}
+.about-img {
+    position: absolute;
+    top:436px;
+    left: 208px;
+    border-radius: 16px;
+    width: 384px;
+    height: 448px;
+}
+.about-wrapper-bio {
+    position: absolute;
+    right: 32px;
+    top: 164px;
+    width: 488px;
+    
+}
+.about-wrapper-education {
+    position: absolute;
+    top: 820px;
+    left: 208px;
+    width: 384px;
+    height: 280px;
+    margin: 0px;
+}
+.about-wrapper-role {
+    position: absolute;
+    top: 820px;
+    left: 728px;
+    width: 384px;
+    height: 184px;
+}
 }
