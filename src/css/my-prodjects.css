@@ -73,7 +73,7 @@ padding-bottom: 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 .project-icon {
     margin-left: 12px;
@@ -96,10 +96,24 @@ height:18px;
     text-transform: uppercase;
     color: var(--black);
     border: none;
+    text-decoration-line: underline;
+    text-decoration-color: var(--accet-green);
 }
+
 .load-more:hover,
-.load-more:focus{
+.load-more:focus {
     color: var(--accet-green);
+}
+
+/* .project-icon {
+    margin-top: 8px; 
+    width: 18px;
+    height: 18px;
+    stroke-width: 2px;
+    stroke: var(--accent-green);
+} */
+
+.project{
 }
 .icon-line{
     width:107px;
@@ -148,9 +162,9 @@ height:18px;
         line-height: 1.6;
         letter-spacing: 0.03em;
     }
-    .icon-line{
+    /* .icon-line{
         width:119px;
-    }
+    } */
 }
 
 
@@ -169,7 +183,7 @@ height:18px;
     .project-item {
         margin-bottom: 80px;
     }
-    .icon-line{
+    /* .icon-line{
         width:125px;
-    }
+    } */
 }
