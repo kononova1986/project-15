@@ -15,6 +15,7 @@ function createMarkup(review) {
   
   async function fetchReviews() {
     try {
+        
       const response = await fetch(
         'https://portfolio-js.b.goit.study/api/reviews'
       );
