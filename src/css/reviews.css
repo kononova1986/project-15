@@ -1,0 +1,88 @@
+/* Основні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+#reviews-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Слайдер стилі */
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.review-author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.review-author span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* Адаптивність */
+@media (max-width: 767px) {
+    #reviews-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    #reviews-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1280px) {
+    #reviews-container {
+        width: 70%;
+    }
+}
