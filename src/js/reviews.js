@@ -2,6 +2,12 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+
+
+
+
+
+
 const buttonNext = document.querySelector('.swiper-button-next');
 const buttonPrev = document.querySelector('.swiper-button-prev');
 
@@ -21,6 +27,8 @@ async function fetchReviews() {
   }
 }
 
+
+
 function createSwiper() {
   new Swiper('.swiper-container', {
     slidesPerView: 1,
@@ -37,7 +45,16 @@ function createSwiper() {
     mousewheel: true,
     breakpoints: {
       768: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+        slideWidth: 704,
+      },
+      1280: {
         slidesPerView: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 32,
+        slideWidth: 592,
       },
     },
     on: {
@@ -60,19 +77,19 @@ function createSwiper() {
 }
 
 function createMarkup(review) {
-  return `<div class="swiper-slide review">
+  return `<li class="swiper-slide review">
     <p class="review-text">${review.review}</p>
     <div class="swiper-img-container">
       <img class="reviews-img" src="${review.avatar_url}" alt="Avatar">
       <h3 class="name">${review.author}</h3>
     </div>
-  </div>`;
+  </li>`;
 }
 
 async function FetchMarkup(createSwiper, createMarkup) {
-  const reviewsList = document.querySelector('#reviewsList');
+  const reviewsList = document.querySelector('#reviews-list');
   if (!reviewsList) {
-    console.error('Element #reviewsList not found');
+    console.error('Element #reviews-list not found');
     return;
   }
 
