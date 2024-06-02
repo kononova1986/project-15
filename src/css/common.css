@@ -29,6 +29,13 @@
 @import url('/node_modules/simplelightbox/dist/simple-lightbox.min.css');
 
 /* Reset styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -83,12 +90,14 @@ main {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    padding: 0 32px;
   }
 }
 

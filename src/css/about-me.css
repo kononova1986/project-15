@@ -1,44 +1,35 @@
 .about-me {
-}
-.container {
-
-}
-.about-container {
-
+    padding-top: 80px;
 }
 .about-title {
-font-family: var(--second-family);
-font-weight: 400;
-font-size: 52px;
-line-height: 123%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-text-align: left;
-color: var(--black);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--black);
+    padding-bottom: 40px;
 }
 .about-title-green {
-color: var(--accet-green);
+    color: var(--accet-green);
 }
 .about-img {
-border-radius: 16px;
-width: 320px;
-height: 374px;
-}
-.about-wrapper {
+    border-radius: 16px;
 }
 .about-wrapper-bio {
-width: 320px;
-margin: 40px 0;
+    margin: 40px 0;
 }
 .about-subtitle {
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 32px;
-line-height: 125%;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: var(--black);
-padding-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding-bottom: 32px;
 }
 .about-list {
     display: flex;
@@ -46,29 +37,137 @@ padding-bottom: 32px;
     gap: 24px;
 }
 .about-item {
-font-family: var(--font-family);
-font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.03em;
-color: var(--black);
-}
-.about-wrapper-all{
-
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
 }
 .about-wrapper-education {
-width: 320px;
+    margin-bottom: 40px;
+}
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.item-education {
+    position: relative;
+    padding-left: 32px;
+}
+.item-role{
+    position: relative;
+    padding-left: 24px; 
+}
+.about-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    fill: var(--accet-green);
+}
+.about-icon-role{
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    fill: var(--accet-green);
+}
 
+@media screen and (min-width: 768px) {
+.about-me {
+    padding-top: 124px;
 }
-.about-list-education {
+.about-container{
+    position: relative;
+    background-image: url(../img/about-img/decor-bg-about.png);
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 90%;
 }
-.about-item-education {
+.about-container-wrap{
+    width: 704px;
+    height: 1264px;
 }
-.about-wrapper-role{
-width: 320px;
-height: 168px;
+.about-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    }
+.about-img {
+    position: absolute;
+    top:532px;
+    width: 336px;
+    height: 392px;
 }
-.about-list-role {
+.about-wrapper-bio {
+    position: absolute;
+    right: 32px;
+    top: 164px;
+    width: 336px;
+    margin: 0;
 }
-.about-item-role {
+.about-wrapper-all{
+    position: relative;
+    display: flex;
+    padding-top: 60px;
+}
+.about-wrapper-education {
+    position: absolute;
+    top: 840px;
+    width: 336px;
+    margin-right: 32px;
+    margin-bottom: 0px;
+}
+.about-wrapper-role {
+    position: absolute;
+    top: 840px;
+    right: 0;
+    width: 336px;
+    height: 184px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+.about-me {
+    padding-top: 124px;
+}
+.about-container{
+    position: relative;
+    background-position-x: 93%;
+    background-position-y: 90%;
+}
+.about-container-wrap{
+    width: 1216px;
+    height: 1244px;
+}
+.about-img {
+    position: absolute;
+    top:436px;
+    left: 208px;
+    border-radius: 16px;
+    width: 384px;
+    height: 448px;
+}
+.about-wrapper-bio {
+    position: absolute;
+    right: 32px;
+    top: 164px;
+    width: 488px;
+    
+}
+.about-wrapper-education {
+    position: absolute;
+    top: 820px;
+    left: 208px;
+    width: 384px;
+    height: 280px;
+    margin: 0px;
+}
+.about-wrapper-role {
+    position: absolute;
+    top: 820px;
+    left: 728px;
+    width: 384px;
+    height: 184px;
+}
 }

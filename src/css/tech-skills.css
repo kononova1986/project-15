@@ -1,0 +1,133 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.tech-skills {
+    padding-top: 80px;
+}
+
+.marquee {
+  overflow: hidden;
+    text-transform: uppercase;
+  background-color: rgba(188, 223, 209, 1);
+width: 100%;
+padding: 32px 0px 32px 0px;
+gap: 16px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 0.5px;
+text-align: center;
+
+}
+
+.marquee__inner {
+   display: flex;
+}
+
+.marquee__line {
+  display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
+    animation: marqueeLine 5s ease-in-out infinite;
+}
+
+
+
+.marquee__line span::after {
+           content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24"><rect width="24" height="24" style="fill:rgba(0,176,104,1)"/></svg>');
+    display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;            
+    vertical-align: 20%;
+        }
+
+
+.marquee2 {
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: rgba(228, 229, 230, 1);
+width: 100%;
+padding: 32px 0px 32px 0px;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 0.5px;
+text-align: left;
+color: rgba(0, 176, 104, 1);
+transform: rotate(2deg);
+}
+
+
+.marquee__line2 {
+  display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
+    animation: marqueeLine 5s ease-in-out infinite;
+
+}
+
+.marquee__line2 span::after {
+         content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24"><rect width="24" height="24" style="fill: rgba(41, 41, 41, 1);"/></svg>');
+    display: inline-block;
+             margin-left: 10px;
+            margin-right: 10px;
+    vertical-align: 20%;
+        }   
+
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(-100%);
+  }
+  }
+
+  @keyframes marqueeLine2 {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(-100%);
+  }
+  }
+
+  @media screen and (min-width: 768px) {
+  .marquee {
+    padding: 40px 0px 40px 0px;
+    font-size: 36px;
+  }
+  
+    .marquee2 {
+    padding: 40px 0px 40px 0px;
+    font-size: 36px;
+  }
+
+  .tech-skills {
+    padding-top: 124px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+  .tech-skills {
+    padding-top: 164px;
+}
+
+  }
+

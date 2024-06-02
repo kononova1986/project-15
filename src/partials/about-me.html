@@ -1,12 +1,18 @@
 <section class="about-me" id="about-me">
     <div class="container about-container">
+        <div class="about-container-wrap">
         <h1 class="about-title">About <span class="about-title-green">me</span></h1>
-        <img
-        class="about-img"
-        src="./img/about-img/mobile-img.jpg"
-        alt="beautiful yacht"
-        />
-        <div class="about-wrapper">
+      
+<picture>
+    <source srcset="./img/about-img/ava-mobile.jpg 1x, 
+    ./img/about-img/ava-mobile@2.jpg 2x" type="image/jpeg" media="(max-width: 767px)">
+    <source srcset="./img/about-img/ava-tab.jpg 1x, 
+    ./img/about-img/ava-tab@2.jpg 2x" type="image/jpeg" media="(min-width: 768px) and (max-width: 1279px)">
+    <source srcset="./img/about-img/ava-desktop.jpg 1x, 
+    ./img/about-img/ava-desktop@2.jpg 2x" type="image/jpeg" media="(min-width: 1280px)">
+    <img class="about-img" src="./img/about-img/ava-mobile.jpg" alt="photo by the author">
+</picture>
+
         <div class="about-wrapper-bio">
         <h3 class="about-subtitle">BIO</h3>
         <ul class="about-list">
@@ -17,23 +23,45 @@
         <div class="about-wrapper-all">
             <div class="about-wrapper-education">
             <h3 class="about-subtitle">EDUCATION</h3>
-            <ul class="about-list-education">
-                <li class="about-item-education">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
-                <li class="about-item-education">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
-                <li class="about-item-education">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+            <ul class="about-list">
+                <li class="about-item item-education"><svg class="about-icon" width="4" height="4">
+                                <use href="./img/symbol-defs.svg#icon-point">
+                                </use>
+                            </svg>2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</li>
+                <li class="about-item item-education"><svg class="about-icon" width="4" height="4">
+                                <use href="./img/symbol-defs.svg#icon-point">
+                                </use>
+                            </svg>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</li>
+                <li class="about-item item-education"><svg class="about-icon" width="4" height="4">
+                                <use href="./img/symbol-defs.svg#icon-point">
+                                </use>
+                            </svg>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
             </ul>
         </div>
         <div>
             <div class="about-wrapper-role">
             <h3 class="about-subtitle">ROLE</h3>
-            <ul class="about-list-role"></ul>
-                <li class="about-item-role">Frontend development</li>
-                <li class="about-item-role">HeadlessCMS, Wordpress</li>
-                <li class="about-item-role">Blender (enjoy)</li>
+            <ul class="about-list">
+                <li class="about-item item-role">
+                    <svg class="about-icon-role" width="4" height="4">
+                                <use href="./img/symbol-defs.svg#icon-point">
+                                </use>
+                            </svg>Frontend development</li>
+                <li class="about-item item-role">
+                    <svg class="about-icon-role" width="4" height="4">
+                                <use href="./img/symbol-defs.svg#icon-point">
+                                </use>
+                            </svg>HeadlessCMS, Wordpress</li>
+                <li class="about-item item-role">
+                    <svg class="about-icon-role" width="4" height="4">
+                                <use href="./img/symbol-defs.svg#icon-point">
+                                </use>
+                            </svg>Blender (enjoy)</li>
             </ul>
             </div>
             </div>
         </div>
+        
         </div>
     </div>
 </section>

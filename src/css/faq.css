@@ -1,0 +1,156 @@
+.faq{
+
+}
+
+.container{
+
+}
+
+.faq-container{
+padding-top: 80px;
+}
+
+.faq-title{
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 52px;
+line-height: 123%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: left;
+color: var(--black);
+margin-bottom: 40px;
+}
+
+.faq-title-span {
+color: var(--accet-green);
+}
+
+.accordion{
+}
+
+.accordion-list{
+}
+
+.accordion-item-title{
+    width: 224px;
+}
+
+.accordion-item{
+    font-family: var(--font-family);
+    font-weight: 400;
+font-size: 18px;
+color: var(--black);
+line-height: 155%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+border-bottom: 1px solid #ccc;
+padding: 28px 24px 28px 24px;
+max-width: 320px;
+}
+
+.list-title-box{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.accordion-text{
+    display: none;
+    font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.03em;
+color: #292929;
+margin-top: 24px;
+margin-right: 24px;
+text-transform:none;
+}
+
+.icon-faq{
+    margin-left: 16px;
+    max-width:16px;
+     stroke:var(--black);
+}
+
+.icon-faq-up{
+    margin-left: 16px;
+     stroke:var(--black);
+}
+
+.icon-usage{ 
+    fill: none;
+}
+
+.active{
+    background-color: var(--light-accent);
+    border-radius: 16px;
+    border-bottom: none;
+}
+
+.active .accordion-text{
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .faq-title{
+        font-size: 108px;
+margin-bottom: 60px;
+        max-width: 592px;
+        line-height: 115%;
+letter-spacing: 0.02em;
+    }
+
+    
+.faq-container{
+padding-top: 124px;
+}
+    
+.accordion-item-title{
+    width: 540px;
+}
+
+.accordion-item{
+max-width: 704px;
+}
+
+
+.icon-faq-up{
+    margin-left: 24px;
+}
+}
+
+@media screen and (min-width:1280px){
+    .faq-container{
+width: 1280px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: relative;
+    background-image: url(../img/faq-image/faq-decor.png);
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 103%;
+}
+
+.faq-title{
+        margin: 0;
+    }
+
+.accordion-item{
+max-width: 592px;
+}
+
+.accordion-item-title{
+    max-width: 460px;
+}
+
+.accordion{
+padding-top: 276px;
+}
+
+.accordion-text{
+    margin-right: 0;
+}
+
+}

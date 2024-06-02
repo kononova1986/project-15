@@ -1,0 +1,137 @@
+.work-with {
+  margin-top: 80px;
+}
+
+.icon {
+}
+
+.work-with-span {
+  color: var(--accet-green);
+}
+
+.work-with-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.work-list-title {
+  margin-bottom: 16px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.work-list {
+  margin-top: 40px;
+}
+
+.work-list-item {
+  margin-top: 32px;
+}
+
+.work-list-paragraph {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.icon-wrap {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 174, 104, 10%);
+  border-radius: 8px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .work-with {
+    margin-top: 124px;
+  }
+  .work-with-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  .work-list {
+    border-radius: 16px;
+    width: 336px;
+    height: 208px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .work-item {
+    margin-top: 0;
+  }
+
+  .work-list-first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 32px; */
+  }
+
+  .work-list-item {
+    border-radius: 16px;
+    width: 336px;
+    height: 184px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .work-with {
+    position: relative;
+    margin-top: 0;
+    padding-top: 164px;
+    background-image: url(../img/benefits/decor-bg.png);
+    background-size: 526px 408px;
+    background-position-x: 694px;
+    background-position-y: 41px;
+    background-repeat: no-repeat;
+  }
+  .work-with-title {
+    display: inline-block;
+    width: 686px;
+  }
+
+  .work-list {
+    position: absolute;
+    top: 440px;
+    left: 864px;
+    z-index: 1;
+
+    width: 384px;
+    height: 184px;
+  }
+
+  .work-list-first {
+    margin-top: 120px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+
+  .work-list-item {
+    width: 384px;
+    height: 184px;
+  }
+}
