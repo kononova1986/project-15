@@ -1,8 +1,10 @@
 .work-with {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .icon {
+  fill: var(--white);
+  stroke: var(--accet-green);
 }
 
 .work-with-span {
@@ -62,7 +64,7 @@
 
 @media screen and (min-width: 768px) {
   .work-with {
-    margin-top: 124px;
+    padding-top: 124px;
   }
   .work-with-title {
     font-size: 108px;
@@ -99,7 +101,6 @@
 @media screen and (min-width: 1280px) {
   .work-with {
     position: relative;
-    margin-top: 0;
     padding-top: 164px;
     background-image: url(../img/benefits/decor-bg.png);
     background-size: 526px 408px;
