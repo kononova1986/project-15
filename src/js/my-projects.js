@@ -35,6 +35,7 @@
             link: "https://github.com/kononova1986/project-15",
             alt: "Ukraine traditions"
         },
+        
         {
             title: "Stay Healthy webservice",
             image: "./img/my-projects/get-body.jpg",
