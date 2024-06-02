@@ -1,70 +1,56 @@
 'use strict';
 
-const form = document.querySelector('.footer-form');
+const form = document.querySelector('.form-work-togezer');
+const footerModal = document.querySelector('.footer-modal-background');
+const closeButton = document.querySelector('.footer-modal-btn');
+const emailInput = document.querySelector('.input-work-togezer');
+const messageInput = document.querySelector('.textarea-work-togezer');
+const emailErrorMessage = document.querySelectorAll('.error-message')[0];
+const messageErrorMessage = document.querySelectorAll('.error-message')[1];
+
+footerModal.style.display = 'none';
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const footerModal = document.querySelector('.footer-modal-background');
-  const footerSuccess = document.querySelector('.footer-input-success-message');
-  const footerError = document.querySelector('.footer-input-error-message');
-  const email = document.getElementById('email');
-  const comment = document.getElementById('comment');
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
 
-  email.classList.remove('footer-input-error');
-  footerError.style.display = 'none';
+  if (!validateEmail(email)) {
+    emailErrorMessage.style.display = 'block';
+    return;
+  } else {
+    emailErrorMessage.style.display = 'none';
+  }
 
-  const data = {
-    email: email.value,
-    comment: comment.value,
-  };
+  if (message === '') {
+    messageErrorMessage.style.display = 'block';
+    return;
+  } else {
+    messageErrorMessage.style.display = 'none';
+  }
 
-  fetch('https://portfolio-js.b.goit.study/api/requests', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  })
-    .then(response => {
-      if (response.ok) {
-        footerModal.classList.add('footer-modal-is-open');
-
-        const closeButton = document.querySelector('.footer-modal-btn');
-        closeButton.addEventListener('click', function () {
-          footerModal.classList.remove('footer-modal-is-open');
-        });
-        document.addEventListener('keydown', function (event) {
-          if (event.key === 'Escape') {
-            footerModal.classList.remove('footer-modal-is-open');
-          }
-        });
-        footerModal.addEventListener('click', function (event) {
-          if (event.target === footerModal) {
-            footerModal.classList.remove('footer-modal-is-open');
-          }
-        });
-        email.classList.add('footer-input-success');
-        footerSuccess.style.display = 'block';
-        setTimeout(function () {
-          footerSuccess.style.display = 'none';
-          email.classList.remove('footer-input-success');
-        }, 10000);
-        form.reset();
-      } else {
-        iziToast.error({
-          title: 'Oops!',
-          message: 'Please, enter a valid email address',
-        });
-        email.classList.add('footer-input-error');
-        footerError.style.display = 'block';
-      }
-      return response.json();
-    })
-    .then(data => {
-      return data;
-    })
-    .catch(error => {
-      return error;
-    });
+  footerModal.style.display = 'flex';
+  form.reset();
 });
+
+closeButton.addEventListener('click', function () {
+  footerModal.style.display = 'none';
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    footerModal.style.display = 'none';
+  }
+});
+
+footerModal.addEventListener('click', function (event) {
+  if (event.target === footerModal) {
+    footerModal.style.display = 'none';
+  }
+});
+
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
