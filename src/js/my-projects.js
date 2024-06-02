@@ -2,73 +2,84 @@
     const projects = [
         {
             title: "Wallet Webservice",
-            image: "./img/my-projects/manager-finance.jpg",
+            image: "../img/my-projects/manager-finance.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Wallet Webservice Project"
+            alt: "Wallet Webservice Project",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Green harvest webservice",
-            image: "./img/my-projects/vegetables.jpg",
+            image: "../img/my-projects/vegetables.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Green harvest"
+            alt: "Green harvest",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "English Exellence webservice",
-            image: "./img/my-projects/discover.jpg",
+            image: "../img/my-projects/discover.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "English Exellence"
+            alt: "English Exellence",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Transform your webservice",
-            image: "./img/my-projects/transform-your.jpg",
+            image: "../img/my-projects/transform-your.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Transform your"
+            alt: "Transform your",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Ukraine traditions webservice",
-            image: "./img/my-projects/traditions-ukraine.jpg",
+            image: "../img/my-projects/traditions-ukraine.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Ukraine traditions"
+            alt: "Ukraine traditions",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
+        
         {
             title: "Stay Healthy webservice",
-            image: "./img/my-projects/get-body.jpg",
+            image: "../img/my-projects/get-body.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Stay Healthy"
+            alt: "Stay Healthy",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Mimino webservice",
-            image: "./img/my-projects/mimino.jpg",
+            image: "../img/my-projects/mimino.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Mimino"
+            alt: "Mimino",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Transformation with a Touch of the Brush webservice",
-            image: "./img/my-projects/brand.jpg",
+            image: "../img/my-projects/brand.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: ""
+            alt: "Transformation with a Touch of the Brush",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Fresh harvest box webservice",
-            image: "./img/my-projects/fresh.jpg",
+            image: "../img/my-projects/fresh.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Fresh harvest box"
+            alt: "Fresh harvest box",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         },
         {
             title: "Transform your business webservice",
-            image: "./img/my-projects/turn-your.jpg",
+            image: "../img/my-projects/turn-your.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
-            alt: "Transform your business"
+            alt: "Transform your business",
+            svg: "../img/symbol-defs.svg#icon-arrow"
         }
     ];
 
@@ -79,7 +90,7 @@
         const projectListEl = document.querySelector('.project-list');
         const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
-        const projectsItems = projectsToLoad.map(({ image, alt, techStack, title, link }) => {
+        const projectsItems = projectsToLoad.map(({ image, alt, techStack, title, link, svg }) => {
             return `
             <li class="project-item">
                 <img src="${image}" alt="${alt}" class="project-image">
@@ -91,7 +102,7 @@
                             <button type="button" class="project-button">
                                 <a href="${link}" class="project-link" target="_blank">VISIT
                                     <svg class="project-icon">
-                                        <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                                        <use href="${svg}"></use>
                                     </svg>
                                 </a>
                             </button>
