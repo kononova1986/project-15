@@ -1,5 +1,5 @@
 .hero{
-    background-image: url('../img/header-hero-background/decor\ bg\ 1.png');
+    background-image: url('../img/header-hero-background/decor1.png');
    background-repeat: no-repeat;
    background-position: right top;
 }
@@ -161,7 +161,7 @@ h1 {
 @media screen and (min-width: 1280px) {
 
 .hero {
-        background-image: url('../img/header-hero-background/decor\ bg\ desktop1.png');
+        background-image: url('../img/header-hero-background/decordesktop1.png');
     }
 .hero-image {
     display: flex;
