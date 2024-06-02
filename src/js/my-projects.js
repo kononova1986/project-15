@@ -2,7 +2,7 @@
     const projects = [
         {
             title: "Wallet Webservice",
-            image: "/src/img/my-projects/manager-finance.jpg",
+            image: "./src/img/my-projects/manager-finance.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Wallet Webservice Project",
@@ -10,7 +10,7 @@
         },
         {
             title: "Green harvest webservice",
-            image: "/src/img/my-projects/vegetables.jpg",
+            image: "./src/img/my-projects/vegetables.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Green harvest",
@@ -26,7 +26,7 @@
         },
         {
             title: "Transform your webservice",
-            image: "/src/img/my-projects/transform-your.jpg",
+            image: "./src/img/my-projects/transform-your.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Transform your",
@@ -34,7 +34,7 @@
         },
         {
             title: "Ukraine traditions webservice",
-            image: "/src/img/my-projects/traditions-ukraine.jpg",
+            image: "./src/img/my-projects/traditions-ukraine.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Ukraine traditions",
@@ -43,7 +43,7 @@
         
         {
             title: "Stay Healthy webservice",
-            image: "/src/img/my-projects/get-body.jpg",
+            image: "./src/img/my-projects/get-body.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Stay Healthy",
@@ -51,7 +51,7 @@
         },
         {
             title: "Mimino webservice",
-            image: "/src/img/my-projects/mimino.jpg",
+            image: "./src/img/my-projects/mimino.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Mimino",
@@ -59,7 +59,7 @@
         },
         {
             title: "Transformation with a Touch of the Brush webservice",
-            image: "/src/img/my-projects/transform-your.jpg",
+            image: "./src/img/my-projects/transform-your.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Transformation with a Touch of the Brush",
@@ -67,7 +67,7 @@
         },
         {
             title: "Fresh harvest box webservice",
-            image: "/src/img/my-projects/fresh.jpg",
+            image: "./src/img/my-projects/fresh.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Fresh harvest box",
@@ -75,7 +75,7 @@
         },
         {
             title: "Transform your business webservice",
-            image: "/src/img/my-projects/transform-your.jpg",
+            image: "./src/img/my-projects/transform-your.jpg",
             techStack: "React, JavaScript, Node JS, Git",
             link: "https://github.com/kononova1986/project-15",
             alt: "Transform your business",
