@@ -1,8 +1,4 @@
 'use strict';
-
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-
 const form = document.querySelector('.footer-form');
 
 form.addEventListener('submit', function (event) {
