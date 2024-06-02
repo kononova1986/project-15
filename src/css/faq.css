@@ -78,9 +78,21 @@ text-transform:none;
      stroke:var(--black);
 }
 
-.icon-usage{ 
-    fill: none;
-}
+.icon-usage-up {
+      display: none;
+      fill: none;
+    }
+    .icon-usage-down {
+      display: block;
+      fill: none;
+    }
+
+ .accordion-item.active .icon-usage-up {
+      display: block;
+    }
+    .accordion-item.active .icon-usage-down {
+      display: none;
+    }
 
 .active{
     background-color: var(--light-accent);
@@ -122,6 +134,7 @@ max-width: 704px;
 
 @media screen and (min-width:1280px){
     .faq-container{
+        height: 1148px;
 width: 1280px;
 display: flex;
 flex-direction: row;
