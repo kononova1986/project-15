@@ -47,9 +47,6 @@ text-transform: uppercase;
 color: var(--black);
 padding-bottom: 16px;
 }
-.break {
-    display: block; /* Робить елемент блочним */
-}
 .project-button {
     text-align: center; 
     font-family: var(--font-family);
