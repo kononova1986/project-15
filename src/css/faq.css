@@ -123,9 +123,8 @@ padding-top: 124px;
 }
 
 .accordion-item{
-min-width: 704px;
+ min-width: 704px;
 }
-
 
 .icon-faq-up{
     margin-left: 24px;
@@ -151,7 +150,7 @@ position: relative;
     }
 
 .accordion-item{
-width: 592px;
+  width: 592px;
 }
 
 .accordion-item-title{
