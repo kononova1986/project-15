@@ -58,21 +58,15 @@
   align-items: center;
  
 }
-.icon-next{
-transform: rotate(-180deg);
-fill: black;
-  stroke: black;
-  width: 34px;
-  height: 34px;
-}
-
-.icon-back {
-  width: 34px;
-  height: 34px;
- 
-  fill: black;
-  stroke: black;
-}
+icon-next{
+  fill: white;
+    stroke: black;
+  }
+  
+  .icon-back {
+    fill:white ;
+    stroke: black;
+  }
 
 .reviews-img {
   width: 40px;
