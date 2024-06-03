@@ -55,6 +55,9 @@
   height: 40px!important;
  
 }
+.icon-next{
+transform: rotate(-180deg);
+}
 
 .icon-back {
   transform: rotate(-180deg);
