@@ -7,21 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeButton = document.querySelector('.footer-modal-btn');
   const closeModalButton = document.querySelector('.work-togezer-close-btn');
   const emailInput = document.querySelector('.input-work-togezer');
-  const emailValidIcon = document.querySelector('.email-valid-icon');
   const messageInput = document.querySelector('.textarea-work-togezer');
   const emailErrorMessage = document.querySelectorAll('.error-message')[0];
   const messageErrorMessage = document.querySelectorAll('.error-message')[1];
 
   footerModal.style.display = 'none';
   modalBlock.style.display = 'none';
-
-  emailInput.addEventListener('input', function() {
-    if (validateEmail(emailInput.value.trim())) {
-      emailValidIcon.style.display = 'inline';
-    } else {
-      emailValidIcon.style.display = 'none';
-    }
-  });
 
   form.addEventListener('submit', async function(event) {
     event.preventDefault();
@@ -31,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!validateEmail(email)) {
       emailErrorMessage.style.display = 'block';
-      emailValidIcon.style.display = 'none';
       return;
     } else {
       emailErrorMessage.style.display = 'none';
@@ -55,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     form.reset();
-    emailValidIcon.style.display = 'none';
   });
 
   closeButton.addEventListener('click', function() {
