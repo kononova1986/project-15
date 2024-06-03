@@ -97,12 +97,14 @@ const projects = [
 
     let currentIndex = 0;
     const projectsPerPage = 3;
+    let observer;
 
     function loadProjects() {
         const projectListEl = document.querySelector('.project-list');
         const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
         const projectsItems = projectsToLoad.map(({image, alt, techStack, title, link, svg }) => {
+            const directionClass = (currentIndex + index) % 2 === 0 ? 'left' : 'right';
             return `
             <li class="project-item">
                 <img src="${image}" alt="${alt}" class="project-image">
@@ -129,16 +131,12 @@ const projects = [
         currentIndex += projectsPerPage;
 
        
-    const newProjectItems = document.querySelectorAll('.project-item');
-    newProjectItems.forEach((item, index) => {
-        setTimeout(() => {
-            item.classList.add('show');
-        }, index * 500); 
+    const newProjectItems = document.querySelectorAll('.project-item:not(.observed)');
+    newProjectItems.forEach((item) => {
+        observer.observe(item);
+        item.classList.add('observed');
     });
-        if (projectsToLoad.length > 0) {
-        const lastNewItem = projectListEl.lastElementChild;
-        lastNewItem.scrollIntoView({ behavior: 'smooth' });
-    }
+
     
 
         if (currentIndex >= projects.length) {
@@ -148,4 +146,12 @@ const projects = [
 
     document.querySelector('.load-more').addEventListener('click', loadProjects);
 
+    observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    });
     loadProjects();

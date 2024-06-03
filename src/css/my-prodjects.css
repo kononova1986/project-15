@@ -20,7 +20,13 @@
     margin-bottom: 40px;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+.project-item.left {
+    transform: translateX(-100%);
+}
+.project-item.right {
+    transform: translateX(100%);
 }
 .project-item.show {
     opacity: 1;
