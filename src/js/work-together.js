@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
       footerModal.style.display = 'none';
+
       modalBlock.style.display = 'none';
     }
   });
