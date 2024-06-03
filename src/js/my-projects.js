@@ -128,6 +128,19 @@ const projects = [
         projectListEl.innerHTML += projectsItems;
         currentIndex += projectsPerPage;
 
+       
+    const newProjectItems = document.querySelectorAll('.project-item');
+    newProjectItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add('show');
+        }, index * 500); 
+    });
+        if (projectsToLoad.length > 0) {
+        const lastNewItem = projectListEl.lastElementChild;
+        lastNewItem.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+
         if (currentIndex >= projects.length) {
             document.querySelector('.load-more').style.display = 'none';
         }

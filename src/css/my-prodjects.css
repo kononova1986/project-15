@@ -18,6 +18,13 @@
 }
 .project-item {
     margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.project-item.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 .project-image {
     border-radius: 16px;
@@ -102,13 +109,6 @@ height:18px;
     color: var(--accet-green);
 }
 
-/* .project-icon {
-    margin-top: 8px; 
-    width: 18px;
-    height: 18px;
-    stroke-width: 2px;
-    stroke: var(--accent-green);
-} */
 
 .project{
 }
