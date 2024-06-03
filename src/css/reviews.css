@@ -60,15 +60,11 @@
  
 }
 .icon-next{
-  top: 5px;
-    left: 5px;
   position: absolute;
     fill: none;
   }
   
   .icon-back {
-    top: 5px;
-    left: 5px;
     position: absolute;
     fill: none;
 stroke: #292929;
