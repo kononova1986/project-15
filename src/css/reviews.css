@@ -15,7 +15,6 @@
 .reviews-swiper {
   display: flex;
   flex-wrap: nowrap;
-
   justify-content: flex-start;
   max-width: 100%;
   margin-bottom: 24px;
@@ -58,7 +57,7 @@
 }
 
 .icon-back {
-  transform: rotate(-180deg);
+ 
   fill: black;
 }
 
