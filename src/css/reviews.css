@@ -48,7 +48,7 @@
 }
 
 .button-prev, .button-next {
-  position: relative;
+ 
   border: 1px solid rgba(41, 41, 41, 0.3);
   
   border-radius: 8px;
@@ -60,12 +60,12 @@
  
 }
 .icon-next{
-  position: absolute;
+
     fill: none;
   }
   
   .icon-back {
-    position: absolute;
+    
     fill: none;
 stroke: #292929;
     
