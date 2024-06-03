@@ -59,9 +59,13 @@
 transform: rotate(-180deg);
 fill: white;
   stroke: black;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-back {
+  width: 24px;
+  height: 24px;
  
   fill: white;
   stroke: black;
