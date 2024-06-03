@@ -58,13 +58,13 @@
  
 }
 .icon-next{
-  fill: white;
-    stroke: black;
+    fill: none;
   }
   
   .icon-back {
-    fill:white ;
-    stroke: black;
+    fill: none;
+stroke: #292929;
+    
   }
 
 .reviews-img {
