@@ -123,7 +123,7 @@ padding-top: 124px;
 }
 
 .accordion-item{
-max-width: 704px;
+min-width: 704px;
 }
 
 
@@ -151,7 +151,7 @@ position: relative;
     }
 
 .accordion-item{
-max-width: 592px;
+width: 592px;
 }
 
 .accordion-item-title{
@@ -167,3 +167,4 @@ padding-top: 276px;
 }
 
 }
+
