@@ -57,11 +57,14 @@
 }
 .icon-next{
 transform: rotate(-180deg);
+fill: white;
+  stroke: black;
 }
 
 .icon-back {
-  transform: rotate(-180deg);
-  fill: black;
+ 
+  fill: white;
+  stroke: black;
 }
 
 .reviews-img {
