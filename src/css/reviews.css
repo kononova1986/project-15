@@ -53,11 +53,14 @@
   padding: 12px;
   width: 40px!important;
   height: 40px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
 }
 .icon-next{
 transform: rotate(-180deg);
-fill: white;
+fill: black;
   stroke: black;
   width: 24px;
   height: 24px;
@@ -67,7 +70,7 @@ fill: white;
   width: 24px;
   height: 24px;
  
-  fill: white;
+  fill: black;
   stroke: black;
 }
 
