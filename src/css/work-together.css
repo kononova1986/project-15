@@ -42,7 +42,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var (--black);
+  color: var(--black);
 }
 .link-work-togezer:hover {
   color: var(--accet-green);
@@ -269,16 +269,4 @@
 .footer-modal-content p {
   font-size: 14px;
   color: #666;
-}
-.input-container {
-  position: relative;
-}
-
-.email-valid-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2em;
-  color: green;
 }
