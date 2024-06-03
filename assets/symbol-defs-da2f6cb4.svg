@@ -13,11 +13,11 @@
 <symbol id="icon-number" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4545" d="M1.818 8.364c0 12.049 9.769 21.818 21.818 21.818h3.273c0.868 0 1.7-0.345 2.314-0.959s0.959-1.446 0.959-2.314v-1.996c0-0.751-0.511-1.405-1.239-1.587l-6.433-1.609c-0.64-0.16-1.312 0.080-1.706 0.607l-1.411 1.881c-0.41 0.547-1.119 0.788-1.76 0.553-2.381-0.875-4.544-2.258-6.338-4.052s-3.177-3.956-4.052-6.338c-0.236-0.641 0.006-1.35 0.553-1.76l1.881-1.411c0.528-0.394 0.767-1.068 0.607-1.706l-1.609-6.433c-0.089-0.354-0.293-0.668-0.58-0.893s-0.642-0.347-1.007-0.347h-1.996c-0.868 0-1.7 0.345-2.314 0.959s-0.959 1.446-0.959 2.314v3.273z"></path>
 </symbol>
-<symbol id="icon-Arrowleft" viewBox="32 32 32 32">
+<symbol id="icon-arrow-reviews-left" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 16h-21.333"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M13.333 24l-8-8 8-8"></path>
 </symbol>
-<symbol id="icon-Arrowright" viewBox="32 32 32 32">
+<symbol id="icon-arrow-reviews-right" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M5.333 16h21.333"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M18.667 8l8 8-8 8"></path>
 </symbol>
