@@ -19,7 +19,7 @@
   overflow: hidden;
     text-transform: uppercase;
   background-color: rgba(188, 223, 209, 1);
-width: 100%;
+width: 100vw;
 padding: 32px 0px 32px 0px;
 gap: 16px;
 opacity: 0px;
@@ -58,7 +58,7 @@ text-align: center;
   overflow: hidden;
   text-transform: uppercase;
   background-color: rgba(228, 229, 230, 1);
-width: 100%;
+width: 100vw;
 padding: 32px 0px 32px 0px;
 font-family: Poppins;
 font-size: 32px;
