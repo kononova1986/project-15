@@ -75,76 +75,91 @@
 
 @media screen and (min-width: 768px) {
 .about-me {
-    padding-top: 124px;
+padding-top: 124px;
 }
 .about-container{
-
-    background-image: url(../img/about-img/decor-bg-about.png);
-    background-repeat: no-repeat;
-    background-position-x: 93%;
-    background-position-y: 90%;
+background-image: url(../img/about-img/decor-bg-about.png);
+background-repeat: no-repeat;
+background-position-x: 93%;
+background-position-y: 90%;
 }
 .about-container-wrap{
-   
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+gap: 32px;
+margin-bottom: 0px;
+align-items: flex-end;
 }
 .about-title {
-    font-size: 108px;
-    line-height: 115%;
-    letter-spacing: 0.02em;
-    }
+font-size: 108px;
+line-height: 115%;
+letter-spacing: 0.02em;
+}
 .about-img {
-    
-    width: 336px;
-    height: 392px;
+width: 336px;
+height: 392px;
 }
 .about-wrapper-bio {
-
-    margin: 0;
+width: 336px;
+margin: 0;
 }
 .about-wrapper-all{
-    position: relative;
-    display: flex;
-    padding-top: 60px;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+gap: 36px;
+margin-top: 60px;
 }
 .about-wrapper-education {
-   
-    margin-right: 32px;
-    margin-bottom: 0px;
+width: 336px;
+height: 280px;
+margin-right: 32px;
+margin-bottom: 0px;
 }
 .about-wrapper-role {
-    
+width: 336px;
+height: 184px; 
 }
 }
 
 @media screen and (min-width: 1280px) {
 .about-me {
-    padding-top: 124px;
+padding-top: 124px;
 }
 .about-container{
-    background-position-x: 93%;
-    background-position-y: 90%;
+background-position-x: 93%;
+background-position-y: 90%;
 }
 .about-container-wrap{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   gap: 136px;
-   margin-bottom: 80px;
+display: flex;
+align-items: flex-end;
+flex-direction: row;
+height: 720px;
+gap: 136px;
+margin-bottom: 80px;
 }
 .about-img {
-    border-radius: 16px;
-    width: 384px;
-    height: 448px;
+border-radius: 16px;
+width: 384px;
+height: 448px;
 }
 .about-wrapper-bio {
-width: 488px;
-height: 488px;
-    
+align-self: start;
+width: 488px;  
+}
+.about-wrapper-all{
+display: flex;
+flex-wrap: wrap;
+gap: 136px;
 }
 .about-wrapper-education {
-   
+width: 384px;
+height: 280px;
+margin: 0;
 }
 .about-wrapper-role {
-  
+width: 384px;
+height: 184px;
 }
 }
