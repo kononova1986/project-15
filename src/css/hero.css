@@ -77,7 +77,9 @@ h1 {
     text-wrap:nowrap;
 }
 
-.rectangle {
+
+
+.rectangle-link {
     width: 165px;
     height: 92px;
     left: 155px;
@@ -87,7 +89,7 @@ h1 {
     background-color: #14C57C33;
 }
 
-.rectangle:hover {
+.rectangle-link:hover {
     background-color: #00B06899;
     cursor:pointer;
 }
@@ -141,7 +143,7 @@ h1 {
     padding-top: 88px;
     padding-bottom: 104px;
 }
-    .rectangle {
+        .rectangle-link {
         Width: 261px;
          Height: 96px;
     }
