@@ -10,7 +10,7 @@
     text-transform: uppercase;
     text-align: left;
     color: var(--black);
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .about-title-green {
     color: var(--accet-green);
@@ -29,7 +29,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--black);
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 .about-list {
     display: flex;
