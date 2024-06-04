@@ -134,5 +134,6 @@
   .work-list-item {
     width: 384px;
     height: 184px;
+    margin-top: 0;
   }
 }
