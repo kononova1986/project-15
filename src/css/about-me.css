@@ -78,15 +78,14 @@
     padding-top: 124px;
 }
 .about-container{
-    position: relative;
+
     background-image: url(../img/about-img/decor-bg-about.png);
     background-repeat: no-repeat;
     background-position-x: 93%;
     background-position-y: 90%;
 }
 .about-container-wrap{
-    width: 704px;
-    height: 1264px;
+   
 }
 .about-title {
     font-size: 108px;
@@ -94,16 +93,12 @@
     letter-spacing: 0.02em;
     }
 .about-img {
-    position: absolute;
-    top:532px;
+    
     width: 336px;
     height: 392px;
 }
 .about-wrapper-bio {
-    position: absolute;
-    right: 32px;
-    top: 164px;
-    width: 336px;
+
     margin: 0;
 }
 .about-wrapper-all{
@@ -112,18 +107,12 @@
     padding-top: 60px;
 }
 .about-wrapper-education {
-    position: absolute;
-    top: 840px;
-    width: 336px;
+   
     margin-right: 32px;
     margin-bottom: 0px;
 }
 .about-wrapper-role {
-    position: absolute;
-    top: 840px;
-    right: 0;
-    width: 336px;
-    height: 184px;
+    
 }
 }
 
@@ -132,42 +121,30 @@
     padding-top: 124px;
 }
 .about-container{
-    position: relative;
     background-position-x: 93%;
     background-position-y: 90%;
 }
 .about-container-wrap{
-    width: 1216px;
-    height: 1244px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   gap: 136px;
+   margin-bottom: 80px;
 }
 .about-img {
-    position: absolute;
-    top:436px;
-    left: 208px;
     border-radius: 16px;
     width: 384px;
     height: 448px;
 }
 .about-wrapper-bio {
-    position: absolute;
-    right: 32px;
-    top: 164px;
-    width: 488px;
+width: 488px;
+height: 488px;
     
 }
 .about-wrapper-education {
-    position: absolute;
-    top: 820px;
-    left: 208px;
-    width: 384px;
-    height: 280px;
-    margin: 0px;
+   
 }
 .about-wrapper-role {
-    position: absolute;
-    top: 820px;
-    left: 728px;
-    width: 384px;
-    height: 184px;
+  
 }
 }

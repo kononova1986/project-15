@@ -73,6 +73,7 @@ img {
 
 body {
   font-family:"Poppins", sans-serif; 
+  margin: 0;
 }
 .container {
   margin: 0 auto;
