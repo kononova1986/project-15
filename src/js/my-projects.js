@@ -97,14 +97,16 @@ const projects = [
 
     let currentIndex = 0;
     const projectsPerPage = 3;
+    let observer;
 
     function loadProjects() {
         const projectListEl = document.querySelector('.project-list');
         const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
-        const projectsItems = projectsToLoad.map(({image, alt, techStack, title, link, svg }) => {
+        const projectsItems = projectsToLoad.map(({image, alt, techStack, title, link, svg }, index) => {
+            const directionClass = (currentIndex + index) % 2 === 0 ? 'left' : 'right';
             return `
-            <li class="project-item">
+            <li class="project-item ${directionClass}">
                 <img src="${image}" alt="${alt}" class="project-image">
                 <div class="project-content">
                     <p class="project-tech">${techStack}</p>
@@ -126,19 +128,18 @@ const projects = [
         }).join('');
 
         projectListEl.innerHTML += projectsItems;
+        
+        
+        const newProjectItems = document.querySelectorAll('.project-item:not(.observed)');
+        newProjectItems.forEach((item) => {
+            observer.observe(item);
+            item.classList.add('observed');
+        });
+        // if (newProjectItems.length > 0) {
+        //     newProjectItems[newProjectItems.length - 1].scrollIntoView({ behavior: 'smooth' });
+        // }
+        
         currentIndex += projectsPerPage;
-
-       
-    const newProjectItems = document.querySelectorAll('.project-item');
-    newProjectItems.forEach((item, index) => {
-        setTimeout(() => {
-            item.classList.add('show');
-        }, index * 500); 
-    });
-        if (projectsToLoad.length > 0) {
-        const lastNewItem = projectListEl.lastElementChild;
-        lastNewItem.scrollIntoView({ behavior: 'smooth' });
-    }
     
 
         if (currentIndex >= projects.length) {
@@ -148,4 +149,12 @@ const projects = [
 
     document.querySelector('.load-more').addEventListener('click', loadProjects);
 
+    observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    });
     loadProjects();
