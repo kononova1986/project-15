@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   footerModal.style.display = 'none';
 
+  function toggleKeyboardListener(isOpen) {
+    if (isOpen) {
+      document.addEventListener('keydown', handleEscapeKeyPress);
+    } else {
+      document.removeEventListener('keydown', handleEscapeKeyPress);
+    }
+  }
+
+  function handleEscapeKeyPress(event) {
+    if (event.key === 'Escape') {
+      footerModal.style.display = 'none';
+    }
+  }
+
   form.addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -37,8 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
         comment: message
       });
       footerModal.style.display = 'flex';
+      toggleKeyboardListener(true);
     } catch (error) {
-      alert('There was an error sending your message.');
+      alert('Произошла ошибка при отправке сообщения.');
     }
 
     form.reset();
@@ -46,17 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   closeButton.addEventListener('click', function() {
     footerModal.style.display = 'none';
-  });
-
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-      footerModal.style.display = 'none';
-    }
+    toggleKeyboardListener(false); 
   });
 
   footerModal.addEventListener('click', function(event) {
     if (event.target === footerModal) {
       footerModal.style.display = 'none';
+      toggleKeyboardListener(false); 
     }
   });
 
