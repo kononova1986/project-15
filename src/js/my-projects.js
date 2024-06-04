@@ -1,20 +1,41 @@
 
 import managerFinanceImg from '../img/my-projects/manager-finance.jpg';
+import managerFinanceImg2x from '../img/my-projects/maneger-finance-x2-min.jpg';
+
 import vegetablesImg from '../img/my-projects/vegetables.jpg';
+import vegetablesImg2x from '../img/my-projects/vegetables-x2-min.jpg';
+
 import discoverImg from '../img/my-projects/discover.jpg';
+import discoverImg2x from '../img/my-projects/discover-x2-min.jpg';
+
 import transformYourImg from '../img/my-projects/transform-your.jpg';
+import transformYourImg2x from '../img/my-projects/transform-your-x2-min.jpg';
+
 import traditionsUkraineImg from '../img/my-projects/traditions-ukraine.jpg';
+import traditionsUkraineImg2x from '../img/my-projects/traditions-ukarain-x2-min.jpg';
+
 import getBodyImg from '../img/my-projects/get-body.jpg';
+import getBodyImg2x from '../img/my-projects/get-body-x2-min.jpg';
+
 import miminoImg from '../img/my-projects/mimino.jpg';
+import miminoImg2x from '../img/my-projects/mimino-x2-min.jpg';
+
 import brandImg from '../img/my-projects/brand.jpg';
+import brandImg2x from '../img/my-projects/brand-x2-min.jpg';
+
 import freshImg from '../img/my-projects/fresh.jpg';
+import freshImg2x from '../img/my-projects/fresh-x2-min.jpg';
+
 import turnYourImg from '../img/my-projects/turn-your.jpg';
+import turnYourImg2x from '../img/my-projects/turn-your-x2-min.jpg';
+
 import arrowIcon from '../img/symbol-defs.svg#icon-arrow';
 
 const projects = [
     {
         title: "Wallet Webservice",
         image: managerFinanceImg,
+        image2x: managerFinanceImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Wallet Webservice Project",
@@ -23,6 +44,7 @@ const projects = [
     {
         title: "Green harvest webservice",
         image: vegetablesImg,
+        image2x: vegetablesImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Green harvest",
@@ -31,6 +53,7 @@ const projects = [
     {
         title: "English Exellence webservice",
         image: discoverImg,
+        image2x: discoverImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "English Exellence",
@@ -39,6 +62,7 @@ const projects = [
     {
         title: "Transform your webservice",
         image: transformYourImg,
+        image2x: transformYourImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Transform your",
@@ -47,6 +71,7 @@ const projects = [
     {
         title: "Ukraine traditions webservice",
         image: traditionsUkraineImg,
+        image2x: traditionsUkraineImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Ukraine traditions",
@@ -55,6 +80,7 @@ const projects = [
     {
         title: "Stay Healthy webservice",
         image: getBodyImg,
+        image2x: getBodyImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Stay Healthy",
@@ -63,6 +89,7 @@ const projects = [
     {
         title: "Mimino webservice",
         image: miminoImg,
+        image2x: miminoImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Mimino",
@@ -71,6 +98,7 @@ const projects = [
     {
         title: "Transformation with a Touch of the Brush webservice",
         image: brandImg,
+        image2x: brandImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Transformation with a Touch of the Brush",
@@ -79,6 +107,7 @@ const projects = [
     {
         title: "Fresh harvest box webservice",
         image: freshImg,
+        image2x: freshImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Fresh harvest box",
@@ -87,6 +116,7 @@ const projects = [
     {
         title: "Transform your business webservice",
         image: turnYourImg,
+        image2x: turnYourImg2x,
         techStack: "React, JavaScript, Node JS, Git",
         link: "https://github.com/kononova1986/project-15",
         alt: "Transform your business",
@@ -107,7 +137,7 @@ const projects = [
             const directionClass = (currentIndex + index) % 2 === 0 ? 'left' : 'right';
             return `
             <li class="project-item ${directionClass}">
-                <img src="${image}" alt="${alt}" class="project-image">
+                <img  srcset="${image} 1x, ${image2x} 2x" src="${image}"  alt="${alt}" class="project-image">
                 <div class="project-content">
                     <p class="project-tech">${techStack}</p>
                     <div class="project-name-btn">
@@ -135,9 +165,6 @@ const projects = [
             observer.observe(item);
             item.classList.add('observed');
         });
-        // if (newProjectItems.length > 0) {
-        //     newProjectItems[newProjectItems.length - 1].scrollIntoView({ behavior: 'smooth' });
-        // }
         
         currentIndex += projectsPerPage;
     
