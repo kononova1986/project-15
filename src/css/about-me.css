@@ -127,6 +127,9 @@ height: 184px;
 .about-me {
 padding-top: 124px;
 }
+.about-container-all-wrap{
+padding-left: 208px;
+}
 .about-container{
 background-position-x: 93%;
 background-position-y: 90%;
@@ -155,11 +158,9 @@ gap: 136px;
 }
 .about-wrapper-education {
 width: 384px;
-height: 280px;
 margin: 0;
 }
 .about-wrapper-role {
 width: 384px;
-height: 184px;
 }
 }
