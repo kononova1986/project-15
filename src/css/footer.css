@@ -6,6 +6,7 @@
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 24px;
+  border-top: 1px solid var(--light-gray);
 }
 .footer-logo {
   font-family: var(--second-family);
@@ -36,6 +37,8 @@
   color: var(--black);
   font-family: var(--font-family);
   font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
