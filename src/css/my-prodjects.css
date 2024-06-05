@@ -1,30 +1,48 @@
 
+.my-projects{
+    padding-top: 80px;
+}
 .projects-title {
-    margin-top: 80px;
     text-align: center;
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 52px;
-    line-height: 123%;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--black);
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .ighlight {
     color: var(--accet-green);
 }
 .project-list {
 }
-.project-item {
-    height: 380px;
-    
+.project-item:not(:last-child) {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.project-item.left {
+    transform: translateX(-100%);
+}
+.project-item.right {
+    transform: translateX(100%);
+}
+.project-item.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 .project-image {
     border-radius: 16px;
 }
 .project-content {
-    padding-top: 15px;
+    margin-top: 15px;
+}
+.project-name-btn{
+    padding-top: 16px;
+
 }
 .project-tech {
     font-family: var(--font-family);
@@ -32,10 +50,7 @@ font-weight: 300;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.03em;
-}
-.project-name-btn{
-    padding-top: 16px;
-
+color: var(--black);
 }
 .project-name {
     font-family: var(--font-family);
@@ -47,15 +62,12 @@ text-transform: uppercase;
 color: var(--black);
 padding-bottom: 16px;
 }
-.break {
-    display: block; /* Робить елемент блочним */
-}
 .project-button {
     text-align: center; 
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--black);
     border-radius: 8px;
@@ -64,12 +76,17 @@ padding-bottom: 16px;
     height: 48px;
     border: none;
     background: var(--light-grey);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-button:hover,
+.project-button:focus{
+    background-color: #bbb;;
 }
 .project-link {
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 .project-icon {
     margin-left: 12px;
@@ -80,6 +97,7 @@ height:18px;
 
 }
 .load-more {
+    margin-top: 40px;
     background-color: white;
     padding: 12px 24px;
     min-width: 154px;
@@ -92,20 +110,90 @@ height:18px;
     text-transform: uppercase;
     color: var(--black);
     border: none;
+    text-decoration-line: underline;
+    text-decoration-color: var(--accet-green);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.load-more:hover,
+.load-more:focus {
+    color: var(--accet-green);
+}
+
+
 .project{
-    display: block;
-    stroke-width: 2px;
+}
+.icon-line{
     width:107px;
     height:2px;
+    stroke-width: 2px;
     stroke: var(--accet-green);
+    display: block;
 }
 .centered {
     text-align: end;
 }
 .centered-button{
-    margin-top: 40px;
-    text-align: center;
+    text-align: center; 
+}
 
-    
+@media screen and (min-width: 768px){
+    .projects-title {
+        font-size: 108px;
+        letter-spacing: 0.02em;
+        margin-bottom: 60px;
+    }
+    .project-image {
+        border-radius: 24px;
+    }
+    .project-item:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .project-name {
+        display: flex;
+        gap: 15px;
+    font-size: 36px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    padding-bottom: 0;
+    }
+    .project-name-btn{
+        padding-top: 20px;
+       display: flex;
+       justify-content: space-between;
+    }
+    .load-more {
+        min-width: 165px;
+        height: 56px;
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+    }
+    /* .icon-line{
+        width:119px;
+    } */
+}
+
+
+@media screen and (min-width: 1280px){
+    .my-projects{
+        padding-top: 164px;
+    }
+    .projects-title {
+        margin-bottom: 80px;
+    }
+    .project-image {
+        border-radius: 24px;
+        height: 578px;
+    }
+    .my-projects>.container{
+        max-width: 1008px;
+    }
+    .project-item:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    /* .icon-line{
+        width:125px;
+    } */
 }
