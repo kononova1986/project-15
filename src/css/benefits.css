@@ -100,14 +100,18 @@
 
 @media screen and (min-width: 1280px) {
   .work-with {
-    position: relative;
     padding-top: 164px;
-    background-image: url(../img/benefits/decor-bg.png);
-    background-size: 526px 408px;
-    background-position-x: 694px;
-    background-position-y: 41px;
+    background-image: url(../img/benefits/decor-bg-1.png);
+    background-size: auto;
+    background-position-x: 96%;
+    background-position-y: 5%;
     background-repeat: no-repeat;
   }
+
+  .work-with-container {
+    position: relative;
+  }
+
   .work-with-title {
     display: inline-block;
     width: 686px;
@@ -115,7 +119,7 @@
 
   .work-list {
     position: absolute;
-    top: 440px;
+    top: 276px;
     left: 864px;
     z-index: 1;
 
