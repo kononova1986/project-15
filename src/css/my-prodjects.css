@@ -41,7 +41,7 @@
     margin-top: 15px;
 }
 .project-name-btn{
-    padding-top: 16px;
+    margin-top: 16px;
 
 }
 .project-tech {
@@ -159,7 +159,7 @@ height:18px;
     padding-bottom: 0;
     }
     .project-name-btn{
-        padding-top: 20px;
+        margin-top: 20px;
        display: flex;
        justify-content: space-between;
     }
@@ -170,9 +170,7 @@ height:18px;
         line-height: 1.6;
         letter-spacing: 0.03em;
     }
-    /* .icon-line{
-        width:119px;
-    } */
+
 }
 
 
@@ -187,13 +185,18 @@ height:18px;
         border-radius: 24px;
         height: 578px;
     }
-    .my-projects>.container{
-        max-width: 1008px;
-    }
     .project-item:not(:last-child) {
         margin-bottom: 80px;
     }
-    /* .icon-line{
-        width:125px;
-    } */
+    .project-image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+    }
+    .project-content{
+        width: 1008px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
