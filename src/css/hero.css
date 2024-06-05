@@ -1,7 +1,8 @@
-.hero{
-    background-image: url('../img/header-hero-background/decor1.png');
-   background-repeat: no-repeat;
-   background-position: right top;
+.hero {
+    padding-top: 112px;
+    background-image: url(../img/header-hero-background/decor1.png);
+        background-repeat: no-repeat;
+        background-position: top center;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
     font-size: 64px;
     color: #292929;
     line-height: 80px;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.03em;
 }
 
 .hero-image {
@@ -20,12 +21,12 @@ h1 {
 
 
 .hero-description {
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 112px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
+    position:relative;
+        
 }
 
 .accent-text {
@@ -87,6 +88,7 @@ h1 {
     margin-left: -70px;
     border-radius: 16px;
     background-color: #14C57C33;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rectangle-link:hover {
@@ -101,7 +103,7 @@ h1 {
     color: #292929;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
 }
 
 .links-section {
@@ -118,7 +120,8 @@ h1 {
         font-size: 16px;
         font-weight: 300;
         line-height:24px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.03em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link:hover {
@@ -139,9 +142,11 @@ h1 {
         line-height: 148px;
         padding-bottom:20px;
     }
+
+    .hero {padding-top: 88px;}
+
 .hero-description {
-    padding-top: 88px;
-    padding-bottom: 104px;
+    margin-bottom: 104px;
 }
         .rectangle-link {
         Width: 261px;
@@ -162,22 +167,27 @@ h1 {
 }
 
 @media screen and (min-width: 1280px) {
-
 .hero {
-        background-image: url(../img/header-hero-background/decordesktop1.png);
-    }
+    background-image: url(../img/header-hero-background/decordesktop1.png);
+background-position: top center;}
+
 .hero-image {
     display: flex;
+}
+
+h1 {
+    padding-bottom: 0px;
 }
 
 .hero-description {
     display: flex;
 flex-direction: row;
-gap:72px;
 flex-wrap: wrap;
 align-items: flex-start;
-justify-content: center;
-padding-bottom: 96px;
+justify-content: flex-end;
+padding-top: 0px;
+margin-bottom: 96px;
+
 }
 
 .main-content {
@@ -185,6 +195,6 @@ padding-bottom: 96px;
 }
         .hero-text-container {
             width:592px;
-            padding-left: 64px;
+          
         }
 }
