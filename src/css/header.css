@@ -32,7 +32,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
-  padding: 4px 4px;
+  padding: 4px;
 }
 
 .nav-list {
@@ -80,14 +80,10 @@
 }
 
 .backdrop-menu-list {
-  background-image: url(../img/header-hero-background/decor\ bg\ 1.png);
+  background-image: url(/img/burger-bg/decor-bg-1.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,6 +91,14 @@
   gap: 24px;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+  .backdrop-menu-list {
+  background-image: url(/img/burger-bg/decor-bg-1-2x.png);
+  }
 }
 
 .is-open {
@@ -114,10 +118,13 @@
   padding: 0px;
 }
 
+.header-icon {
+  stroke: var(--black);
+}
+
 .modal-header {
   display: flex;
   justify-content: space-between;
-  padding: 16px 20px;
   align-items: center;
   margin: 0 auto;
   padding: 20px 20px;
@@ -125,10 +132,11 @@
 
 @media screen and (min-width: 768px) {
 
-.header-logo {
+  .header-logo {
     font-size: 32px;
     letter-spacing: 0.05em;
-  } 
+  }
+
   .nav-list {
     display: flex;
     align-items: center;

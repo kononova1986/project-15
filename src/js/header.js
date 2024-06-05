@@ -16,3 +16,18 @@ navigationListEl.addEventListener('click', (event) => {
         toggleModal();
     }
 })
+
+const anchors = document.querySelectorAll('a[class="nav-link"]');
+
+anchors.forEach(anchor => {
+    anchor.addEventListener('click', event => {
+        event.preventDefault();
+
+        const sectionsId = anchor.getAttribute('href').substring(1);
+
+        document.getElementById(sectionsId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+})
