@@ -17,6 +17,8 @@
 }
 .about-img {
     border-radius: 16px;
+    width: 320px;
+    height: 374px;
 }
 .about-wrapper-bio {
     margin: 40px 0;
@@ -96,6 +98,10 @@
     line-height: 115%;
     letter-spacing: 0.02em;
 }
+.about-img {
+    width: 336px;
+    height: 392px;
+}
 .about-wrapper-bio {
     width: 336px;
     margin: 0;
@@ -139,6 +145,10 @@
 .about-wrapper-bio {
     align-self: start;
     width: 488px;  
+}
+.about-img {
+    width: 384px;
+    height: 448px;
 }
 .about-wrapper-all{
     gap: 136px;
