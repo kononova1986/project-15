@@ -6,14 +6,15 @@
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 24px;
+  border-top: 1px solid var(--light-gray);
 }
 .footer-logo {
   font-family: var(--second-family);
   font-size: 32px;
   line-height: 32px;
-  margin-bottom: 32px;
   color: var(--black);
 }
+
 .footer-logo-second {
   color: var(--accet-green);
 }
@@ -27,12 +28,17 @@
   display: flex;
   justify-content: center;
 }
+.footer-list{
+  margin-top: 32px;
+}
 .copyright-mark {
   margin-top: 16px;
   text-align: center;
   color: var(--black);
   font-family: var(--font-family);
   font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
@@ -68,6 +74,9 @@
   }
   .footer-item {
     margin-bottom: 0;
+  }
+  .footer-list{
+    margin-top: 0;
   }
   .copyright-mark {
     margin-top: 40px;
