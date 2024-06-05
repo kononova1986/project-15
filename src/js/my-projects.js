@@ -133,7 +133,7 @@ const projects = [
         const projectListEl = document.querySelector('.project-list');
         const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
-        const projectsItems = projectsToLoad.map(({image, alt, techStack, title, link, svg }, index) => {
+        const projectsItems = projectsToLoad.map(({image, image2x, alt, techStack, title, link, svg }, index) => {
             const directionClass = (currentIndex + index) % 2 === 0 ? 'left' : 'right';
             return `
             <li class="project-item ${directionClass}">
