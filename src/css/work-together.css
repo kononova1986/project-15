@@ -155,10 +155,15 @@
    .work-togezer-subtitle{
     margin: 0;
    }
+   
+   .address-work-togezer{
+    margin-bottom: 0;
+   }
   .list-work-togezer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 0;
   }
   .input-work-togezer {
     width: 592px;
@@ -178,6 +183,9 @@
   }
   .work-togezer-container {
     background-image: url(../img/work-togezer/work-decktop-bg.png);
+  }
+  .form-work-togezer{
+    margin-bottom: 0;
   }
 }
 

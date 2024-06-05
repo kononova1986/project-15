@@ -186,7 +186,8 @@ h1 {
 flex-direction: row;
 flex-wrap: wrap;
 align-items: flex-start;
-justify-content: flex-end;
+row-gap:80px;
+justify-content: space-between;
 padding-top: 0px;
 margin-bottom: 96px;
 }
@@ -197,4 +198,7 @@ margin-bottom: 96px;
 .hero-text-container {
     width:592px;
     }
+.order-btn-container {
+    padding-left: 72px;
+}
 }
