@@ -28,7 +28,7 @@
   color: var(--black);
 }
 .address-work-togezer {
-  margin-top: 32px;
+  margin: 32px 0 32px 0;
 }
 .list-work-togezer {
   display: flex;
@@ -152,6 +152,9 @@
   .work-togezer-title {
     width: 550px;
   }
+   .work-togezer-subtitle{
+    margin: 0;
+   }
   .list-work-togezer {
     display: flex;
     flex-wrap: wrap;
