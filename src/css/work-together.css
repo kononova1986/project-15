@@ -122,17 +122,21 @@
     line-height: 115%;
     letter-spacing: 0.02em;
   }
+  .contact-work-togezer{
+    padding-top: 0;
+  }
   .work-togezer-subtitle {
     font-size: 20px;
     line-height: 160%;
     letter-spacing: 0.03em;
-    margin-top: 32px;
+    margin-top: 0px;
     width: 488px;
   }
   .list-work-togezer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 60px;
   }
   .textarea-work-togezer {
     height: 128px;
