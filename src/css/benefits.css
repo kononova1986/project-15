@@ -101,15 +101,23 @@
 @media screen and (min-width: 1280px) {
   .work-with {
     padding-top: 164px;
-    background-image: url(../img/benefits/decor-bg-1.png);
-    background-size: auto;
-    background-position-x: 96%;
-    background-position-y: 5%;
-    background-repeat: no-repeat;
   }
 
   .work-with-container {
     position: relative;
+    overflow: visible;
+  }
+
+  .background {
+    position: absolute;
+    background-image: url(../img/benefits/decor-bg-1.png);
+    background-size: 526px 408px;
+    width: 526px;
+    height: 408px;
+    top: -150px;
+    left: 722px;
+    background-repeat: no-repeat;
+    z-index: 5;
   }
 
   .work-with-title {
