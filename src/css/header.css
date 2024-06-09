@@ -106,11 +106,7 @@ height: 24px;
   width: 100%;
   height: 100%;
 }
-.modal-header{
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-}
+
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 2dppx),
 (min-resolution: 192dpi) {
@@ -140,12 +136,12 @@ height: 24px;
   stroke: var(--black);
 }
 
-.modal-header {
+.modal-header{
+  padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px 20px;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,6 +159,10 @@ height: 24px;
   }
 
   .menu-btn {
+    display: none;
+  }
+
+  .is-open{
     display: none;
   }
 
