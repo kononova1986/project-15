@@ -56,10 +56,11 @@
 }
 .icon-next{
   fill: none;
-  
+  stroke: #CCCCCC;
   }
   .icon-back {
     fill: none;
+    stroke: #292929;
   }
  
 .reviews-img {
