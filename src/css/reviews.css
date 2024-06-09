@@ -49,20 +49,18 @@
 
 .button-prev, .button-next{
  border: 1px solid rgba(100, 100, 100, 0.4);
-  padding: 8px 0 0 8px;
+  padding: 8px;
   border-radius: 8px;
   width: 40px!important;
   height: 40px!important;
+  
 }
 .icon-next{
-  fill: none;
-  stroke: #CCCCCC;
+
   }
-  .icon-back {
-    fill: none;
-    stroke: #292929;
+.icon-back{
+
   }
- 
 .reviews-img {
   width: 40px;
   height: 40px;
