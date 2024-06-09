@@ -60,6 +60,7 @@ document.querySelectorAll('.icon-faq-up, .header-icon').forEach(element => {
     svgWhite.style.display = 'block';
     document.body.style.backgroundColor = '#FFFFFF';
     head.style.backgroundColor = '#FFFFFF';
+     menuMobile.style.backgroundColor = '#FFFFFF';
     svgNext.forEach(element => {element.style.stroke = "#292929";});
     document.querySelectorAll('h1, h2, h3, p, li, a').forEach(element => {
     element.style.color = '#292929';
