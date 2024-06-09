@@ -44,15 +44,11 @@ if (svgBlack.style.display === 'none' || svgBlack.style.display === '') {
     svgWhite.style.display = 'none';
     document.body.style.backgroundColor = '#292929';
     head.style.backgroundColor = '#292929';
-      svgNext.forEach(element => {
-      element.style.stroke = "#FFFFFF";
-    });
+    svgNext.forEach(element => {element.style.stroke = "#FFFFFF";});
     document.querySelectorAll('input, textarea, .links-section , .swiper-slide, .marquee2').forEach(element => {
     element.style.background = '#2a2d32';
 });
-document.querySelectorAll('h1, h2, h3, p, li, a').forEach(element => {
-    element.style.color = '#FFFFFF';
-});
+document.querySelectorAll('h1, h2, h3, p, li, a').forEach(element => {element.style.color = '#FFFFFF';});
 document.querySelectorAll('.icon-faq-up, .header-icon').forEach(element => {
     element.style.stroke = '#FFFFFF';
     element.style.fill = '#FFFFFF';
@@ -62,15 +58,12 @@ document.querySelectorAll('.icon-faq-up, .header-icon').forEach(element => {
     svgWhite.style.display = 'block';
     document.body.style.backgroundColor = '#FFFFFF';
     head.style.backgroundColor = '#FFFFFF';
-     svgNext.forEach(element => {
-      element.style.stroke = "#292929";
-    });
+    svgNext.forEach(element => {element.style.stroke = "#292929";});
     document.querySelectorAll('h1, h2, h3, p, li, a').forEach(element => {
     element.style.color = '#292929';
 });
     document.querySelectorAll('input, textarea, .links-section , .swiper-slide, .marquee2').forEach(element => {
-    element.style.background = 'var(--light-grey)';
-    }); 
+    element.style.background = 'var(--light-grey)';}); 
 document.querySelectorAll('.icon-faq-up, .header-icon').forEach(element => {
     element.style.stroke = '#292929';
     element.style.fill = '#292929';
