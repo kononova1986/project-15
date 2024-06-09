@@ -46,7 +46,7 @@
 }
 .icon-work-togezer {
   stroke: var(--accet-green);
-  fill: white;
+  fill:none;
   vertical-align: middle;
 }
 .link-mail-work-togezer,
