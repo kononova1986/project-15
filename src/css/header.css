@@ -109,6 +109,7 @@ height: 24px;
 .modal-header{
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
 }
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 2dppx),
