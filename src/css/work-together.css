@@ -271,12 +271,12 @@
   text-decoration: none;
   cursor: pointer;
 }
-.footer-modal-content h2 {
+.footer-modal-content, h2 {
   font-size: 24px;
   color: var(--accet-green);
   margin: 0 0 10px 0;
 }
-.footer-modal-content p {
+.footer-modal-content, p {
   font-size: 14px;
   color: #666;
 }
