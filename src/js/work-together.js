@@ -76,3 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
     return regex.test(email);
   }
 });
+
+const form = document.querySelector('.form-work-togezer');
+form.addEventListener('input', event => {  
+  event.currentTarget.elements.email.style.background = '#e4e5e6';  
+  event.currentTarget.elements.message.style.background = '#e4e5e6';  
+});

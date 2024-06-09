@@ -47,28 +47,26 @@
   gap: 16px;
 }
 
-.button-prev, .button-next {
- 
-  border: 1px solid rgba(41, 41, 41, 0.3);
+.button-prev{
+ border: 1px solid rgba(100, 100, 100, 0.4);
   padding: 8px 0 0 8px;
   border-radius: 8px;
   width: 40px!important;
   height: 40px!important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
 }
 .icon-next{
-
+  fill: none;
+  transform: rotate(180deg);
+  }
+  .icon-back {
     fill: none;
   }
-  
-  .icon-back {
-    
-    fill: none;
-stroke: #292929;
-    
+  .button-next {
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  padding: 0 8px 8px 0px;
+  border-radius: 8px;
+  width: 40px!important;
+  height: 40px!important;
   }
 
 .reviews-img {

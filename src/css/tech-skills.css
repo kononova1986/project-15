@@ -18,7 +18,7 @@
 .marquee {
   overflow: hidden;
     text-transform: uppercase;
-  background-color: rgba(188, 223, 209, 1);
+  background-color: rgba(54, 151, 112, 0.4);
 width: 100vw;
 padding: 32px 0px 32px 0px;
 gap: 16px;

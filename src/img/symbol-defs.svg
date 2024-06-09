@@ -14,11 +14,11 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.4545" d="M1.818 8.364c0 12.049 9.769 21.818 21.818 21.818h3.273c0.868 0 1.7-0.345 2.314-0.959s0.959-1.446 0.959-2.314v-1.996c0-0.751-0.511-1.405-1.239-1.587l-6.433-1.609c-0.64-0.16-1.312 0.080-1.706 0.607l-1.411 1.881c-0.41 0.547-1.119 0.788-1.76 0.553-2.381-0.875-4.544-2.258-6.338-4.052s-3.177-3.956-4.052-6.338c-0.236-0.641 0.006-1.35 0.553-1.76l1.881-1.411c0.528-0.394 0.767-1.068 0.607-1.706l-1.609-6.433c-0.089-0.354-0.293-0.668-0.58-0.893s-0.642-0.347-1.007-0.347h-1.996c-0.868 0-1.7 0.345-2.314 0.959s-0.959 1.446-0.959 2.314v3.273z"></path>
 </symbol>
 <symbol id="icon-arrow-reviews-left" viewBox="0 0 32 32">
-<path d="M20 12H4.00001" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 18L4 12L10 6" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 12H4.00001" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol id="icon-arrow-reviews-right" viewBox="0 0 32 32">
-<path stroke="#292929" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M14 6l6 6-6 6"/>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M14 6l6 6-6 6"/>
 </symbol>
 <symbol id="icon-accordion-arrow-down" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 12l-8 8-8-8"></path>
@@ -58,6 +58,14 @@
 </symbol>
 <symbol id="icon-Rectangle-2062" viewBox="0 0 32 32">
 <path d="M24 0h-16c-4.418 0-8 3.582-8 8v16c0 4.418 3.582 8 8 8h16c4.418 0 8-3.582 8-8v-16c0-4.418-3.582-8-8-8z"></path>
+</symbol>
+<symbol id="icon-light" viewBox="0 0 32 16">
+<path d="M8 0h16c4.418 0 8 3.582 8 8s-3.582 8-8 8h-16c-4.418 0-8-3.582-8-8s3.582-8 8-8z"></path>
+<path d="M14.667 8c0 3.682-2.985 6.667-6.667 6.667s-6.667-2.985-6.667-6.667c0-3.682 2.985-6.667 6.667-6.667s6.667 2.985 6.667 6.667z"></path>
+</symbol>
+<symbol id="icon-dark" viewBox="0 0 32 16">
+<path d="M8 0h16c4.418 0 8 3.582 8 8s-3.582 8-8 8h-16c-4.418 0-8-3.582-8-8s3.582-8 8-8z"></path>
+<path d="M21.333 14.112c2.355-1.029 4-3.378 4-6.112s-1.645-5.083-4-6.112c0.817-0.357 1.719-0.555 2.667-0.555 3.682 0 6.667 2.985 6.667 6.667s-2.985 6.667-6.667 6.667c-0.948 0-1.85-0.198-2.667-0.555z"></path>
 </symbol>
 </defs>
 </svg>

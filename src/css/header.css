@@ -2,7 +2,7 @@
   padding: 20px 0;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
   z-index: 2;
 }
 
@@ -11,7 +11,21 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.icon-btn, .icon-btn-black{
+width: 48px;
+height: 24px;
+}
+.icon-btn-black{
+  display: none;
+}
+.button-background{
+  background-size: cover;
+  width: 48px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .header-logo {
   font-family: var(--second-family);
   font-weight: 400;
@@ -147,4 +161,5 @@
   .menu-btn {
     display: none;
   }
+
 }

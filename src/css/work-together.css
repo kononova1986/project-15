@@ -1,4 +1,3 @@
-
 .work-togezer {
   padding-top: 164px;
 }
@@ -210,6 +209,7 @@
   width: 90%;
   max-width: 500px;
   text-align: center;
+  justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .work-togezer-close-btn {

@@ -3,7 +3,7 @@
 }
 
 .icon {
-  fill: var(--white);
+  fill: none;
   stroke: var(--accet-green);
 }
 

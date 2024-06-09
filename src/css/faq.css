@@ -1,13 +1,5 @@
 .faq{
 padding-top: 80px;
-
-}
-
-.container{
-
-}
-
-.faq-container{
 }
 
 .faq-title{
@@ -24,12 +16,6 @@ margin-bottom: 40px;
 
 .faq-title-span {
 color: var(--accet-green);
-}
-
-.accordion{
-}
-
-.accordion-list{
 }
 
 .accordion-item-title{
@@ -95,7 +81,7 @@ text-transform:none;
     }
 
 .active{
-    background-color: var(--light-accent);
+    background-color: rgba(54, 151, 112, 0.4);
     border-radius: 16px;
     border-bottom: none;
 }
