@@ -37,6 +37,7 @@ const svgBlack = document.querySelector('.icon-btn-black');
 const svgWhite = document.querySelector('.icon-btn');
 const svgNext = document.querySelectorAll('.icon-next, .icon-back');
 const head = document.querySelector('.header');
+const menuMobile = document.querySelector('.menu-backdrop');
 
 btn.addEventListener('click', () => {
 if (svgBlack.style.display === 'none' || svgBlack.style.display === '') {
@@ -44,6 +45,7 @@ if (svgBlack.style.display === 'none' || svgBlack.style.display === '') {
     svgWhite.style.display = 'none';
     document.body.style.backgroundColor = '#292929';
     head.style.backgroundColor = '#292929';
+    menuMobile.style.backgroundColor = '#292929';
     svgNext.forEach(element => {element.style.stroke = "#FFFFFF";});
     document.querySelectorAll('input, textarea, .links-section , .swiper-slide, .marquee2').forEach(element => {
     element.style.background = '#2a2d32';
