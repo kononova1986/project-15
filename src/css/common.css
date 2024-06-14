@@ -8,13 +8,13 @@
   font-weight: 400;
 
   --black: #292929;
-	--accet-green: #00b068;
-	--white: #f0f0f0;
-	--light-grey: #e4e5e6;
-	--light-accent: #bcdfd1;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
 
   color: #292929;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,18 +23,18 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@import url('/node_modules/normalize.css/normalize.css');
-@import url('/node_modules/swiper/swiper.min.css');
-@import url('/node_modules/accordion-js/dist/accordion.min.css');
-@import url('/node_modules/basiclightbox/dist/basicLightbox.min.css');
-@import url('/node_modules/simplelightbox/dist/simple-lightbox.min.css');
+@import url("/node_modules/normalize.css/normalize.css");
+@import url("/node_modules/swiper/swiper.min.css");
+@import url("/node_modules/accordion-js/dist/accordion.min.css");
+@import url("/node_modules/basiclightbox/dist/basicLightbox.min.css");
+@import url("/node_modules/simplelightbox/dist/simple-lightbox.min.css");
 
 /* Reset styles */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -75,7 +75,7 @@ img {
 }
 
 body {
-  font-family:"Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -85,9 +85,7 @@ body {
   max-width: 360px;
   width: 100%;
 }
-.wight{
-  color: #FFFFFF;
-}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;

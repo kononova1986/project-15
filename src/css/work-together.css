@@ -46,7 +46,7 @@
 }
 .icon-work-togezer {
   stroke: var(--accet-green);
-  fill:none;
+  fill: none;
   vertical-align: middle;
 }
 .link-mail-work-togezer,
@@ -121,7 +121,7 @@
     line-height: 115%;
     letter-spacing: 0.02em;
   }
-  .contact-work-togezer{
+  .contact-work-togezer {
     padding-top: 0;
   }
   .work-togezer-subtitle {
@@ -151,13 +151,13 @@
   .work-togezer-title {
     width: 550px;
   }
-   .work-togezer-subtitle{
+  .work-togezer-subtitle {
     margin: 0;
-   }
-   
-   .address-work-togezer{
+  }
+
+  .address-work-togezer {
     margin-bottom: 0;
-   }
+  }
   .list-work-togezer {
     display: flex;
     flex-wrap: wrap;
@@ -183,59 +183,11 @@
   .work-togezer-container {
     background-image: url(../img/work-togezer/work-decktop-bg.png);
   }
-  .form-work-togezer{
+  .form-work-togezer {
     margin-bottom: 0;
   }
 }
 
-/* Modal */
-.modal-work-togezer {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-}
-.modal-work-togezer .work-togezer-container {
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.work-togezer-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-.work-togezer-close-btn svg {
-  fill: #333;
-}
-.work-togezer-close-btn:hover svg {
-  fill: #000;
-}
-.modal-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.modal-p {
-  font-size: 16px;
-  color: #666;
-}
 .footer-modal-background {
   display: none;
   position: fixed;
@@ -271,12 +223,12 @@
   text-decoration: none;
   cursor: pointer;
 }
-.footer-modal-content h2 {
+.footer-modal-content .h-modal {
   font-size: 24px;
-  color: var(--accet-green);
+  color: #00b068;
   margin: 0 0 10px 0;
 }
-.footer-modal-content p {
+.footer-modal-content .p-modal {
   font-size: 14px;
   color: #666;
 }

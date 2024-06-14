@@ -2,7 +2,7 @@
   padding: 20px 0;
   position: sticky;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 2;
 }
 
@@ -11,14 +11,15 @@
   justify-content: space-between;
   align-items: center;
 }
-.icon-btn, .icon-btn-black{
-width: 48px;
-height: 24px;
+.icon-btn,
+.icon-btn-black {
+  width: 48px;
+  height: 24px;
 }
-.icon-btn-black{
+.icon-btn-black {
   display: none;
 }
-.button-background{
+.button-background {
   background-size: cover;
   width: 48px;
   height: 24px;
@@ -79,7 +80,9 @@ height: 24px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-wrap {
@@ -108,11 +111,9 @@ height: 24px;
   height: 100%;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 2dppx),
-(min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .backdrop-menu-list {
-  background-image: url(/img/burger-bg/decor-bg-1-2x.png);
+    background-image: url(/img/burger-bg/decor-bg-1-2x.png);
   }
 }
 
@@ -137,9 +138,9 @@ height: 24px;
   stroke: var(--black);
 }
 
-.modal-header{
+.modal-header {
   width: 360px;
-  padding-top: 20px;
+  padding-top: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -147,7 +148,6 @@ height: 24px;
 }
 
 @media screen and (min-width: 768px) {
-
   .header-logo {
     font-size: 32px;
     letter-spacing: 0.05em;
@@ -164,8 +164,7 @@ height: 24px;
     display: none;
   }
 
-  .is-open{
+  .is-open {
     display: none;
   }
-
 }
