@@ -90,7 +90,7 @@
 }
 
 .mobile-menu-wrap {
-  width: 100vh; /* исправлено */
+  width: 360px;
   height: 100%;
   position: absolute;
   top: 50%;
