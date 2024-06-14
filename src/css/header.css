@@ -11,14 +11,17 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .icon-btn,
 .icon-btn-black {
   width: 48px;
   height: 24px;
 }
+
 .icon-btn-black {
   display: none;
 }
+
 .button-background {
   background-size: cover;
   width: 48px;
@@ -27,6 +30,7 @@
   background: none;
   cursor: pointer;
 }
+
 .header-logo {
   font-family: var(--second-family);
   font-weight: 400;
@@ -86,11 +90,9 @@
 }
 
 .mobile-menu-wrap {
-  width: 360px;
-  width: 100%;
+  width: 100vh; /* исправлено */
   height: 100%;
   position: absolute;
-  margin: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -140,10 +142,12 @@
 
 .modal-header {
   width: 360px;
-  padding-top: 24px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
   height: 100%;
 }
 
