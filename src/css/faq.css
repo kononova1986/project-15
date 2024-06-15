@@ -42,7 +42,7 @@
 }
 
 .accordion-text {
-    display: none;
+    visibility: hidden;
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -51,6 +51,11 @@
     margin-top: 24px;
     margin-right: 24px;
     text-transform: none;
+}
+
+.active .accordion-text {
+    visibility: visible;
+    transition: 0.5s;
 }
 
 .icon-faq {
@@ -85,11 +90,9 @@
     border-radius: 16px;
     border-bottom: none;
 }
-
-.active .accordion-text {
+.active {
     display: block;
 }
-
 @media screen and (min-width: 768px) {
     .faq-title {
         font-size: 108px;

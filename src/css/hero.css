@@ -98,7 +98,9 @@ h1 {
     line-height: 28px;
     letter-spacing: 0.03em;
 }
-
+.hero-description {
+    margin-bottom: 80px;
+}
 .links-section {
     background-color: #e4e5e6;
     padding-top: 32px;
