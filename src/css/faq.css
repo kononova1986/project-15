@@ -42,7 +42,6 @@
 }
 
 .accordion-text {
-    visibility: hidden;
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -51,11 +50,13 @@
     margin-top: 24px;
     margin-right: 24px;
     text-transform: none;
+    transition: opacity 0.5s ease;
+    opacity: 0;
 }
 
 .active .accordion-text {
-    visibility: visible;
-    transition: 0.5s;
+    transition: all 1s ease;
+    opacity: 1;
 }
 
 .icon-faq {
