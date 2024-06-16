@@ -32,6 +32,9 @@ anchors.forEach(anchor => {
   });
 });
 
+const element = document.querySelector('h1');
+element.classList.add('animate__animated', 'animate__bounce');
+
 const btn = document.querySelector('.button-background');
 const svgBlack = document.querySelector('.icon-btn-black');
 const svgWhite = document.querySelector('.icon-btn');

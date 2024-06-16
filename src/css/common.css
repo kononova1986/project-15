@@ -22,7 +22,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+@import url("/node_modules/animate.css/animate.min.css");
 @import url("/node_modules/normalize.css/normalize.css");
 @import url("/node_modules/swiper/swiper.min.css");
 @import url("/node_modules/accordion-js/dist/accordion.min.css");
